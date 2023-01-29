@@ -5,4 +5,5 @@ import com.swn.main.world.properties.WorldPropertyCreator;
 import org.springframework.stereotype.Component;
 
 @Component
-public class WorldCreator extends DisplayProperties<WorldPropertyCreator> {}
+public class WorldCreator extends DisplayProperties<WorldPropertyCreator> {
+}

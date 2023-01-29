@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public abstract class PatronNpcPropertyCreator extends NpcPropertyCreator {
 
     @Override
-    protected String getFilePackage(){
+    protected String getFilePackage() {
         return super.getFilePackage() + "/patron";
     }
 }

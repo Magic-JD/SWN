@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public abstract class StandardNpcPropertyCreator extends NpcPropertyCreator {
 
     @Override
-    protected String getFilePackage(){
-        return super.getFilePackage() +  "/standard";
+    protected String getFilePackage() {
+        return super.getFilePackage() + "/standard";
     }
 }

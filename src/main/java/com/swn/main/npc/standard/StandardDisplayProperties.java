@@ -5,4 +5,5 @@ import com.swn.main.property.DisplayProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-public class StandardDisplayProperties extends DisplayProperties<StandardNpcPropertyCreator> {}
+public class StandardDisplayProperties extends DisplayProperties<StandardNpcPropertyCreator> {
+}

@@ -10,11 +10,11 @@ public class NpcCreator {
     @Autowired StandardDisplayProperties standard;
     @Autowired PatronDisplayProperties patron;
 
-    public String createStandard(){
+    public String createStandard() {
         return standard.displayProperties();
     }
 
-    public String createPatron(){
+    public String createPatron() {
         return patron.displayProperties();
     }
 }

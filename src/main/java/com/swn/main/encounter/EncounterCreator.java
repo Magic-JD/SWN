@@ -11,11 +11,11 @@ public class EncounterCreator {
     @Autowired UrbanDisplayProperties urban;
     @Autowired WildernessDisplayProperties wilderness;
 
-    public String createUrbanEncounter(){
-       return urban.displayProperties();
+    public String createUrbanEncounter() {
+        return urban.displayProperties();
     }
 
-    public String createWildernessEncounter(){
+    public String createWildernessEncounter() {
         return wilderness.displayProperties();
     }
 }

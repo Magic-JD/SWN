@@ -9,7 +9,7 @@ public abstract class DisplayProperties<T extends Property> {
 
     @Autowired List<T> properties;
 
-    public String displayProperties(){
+    public String displayProperties() {
         return properties
                 .stream()
                 .map(Property::getProperty)

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public abstract class EncounterPropertyCreator extends NonRangedPropertyCreator {
 
     @Override
-    protected String getFilePackage(){
+    protected String getFilePackage() {
         return "src/main/resources/random_gen/encounter";
     }
 }

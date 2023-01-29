@@ -5,4 +5,5 @@ import com.swn.main.property.DisplayProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-public class PatronDisplayProperties extends DisplayProperties<PatronNpcPropertyCreator> {}
+public class PatronDisplayProperties extends DisplayProperties<PatronNpcPropertyCreator> {
+}

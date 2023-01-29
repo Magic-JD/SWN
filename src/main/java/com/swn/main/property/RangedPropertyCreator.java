@@ -12,17 +12,17 @@ public abstract class RangedPropertyCreator extends PropertyCreator {
 
     @PostConstruct
     @Override
-    protected void initMapping(){
+    protected void initMapping() {
         mapping = resourceExtractor.rangedResourceMapping(getFile());
     }
 
     @Override
-    protected int getRoll(){
+    protected int getRoll() {
         return Dice.roll2D6();
     }
 
     @Override
-    protected String getString(int roll){
+    protected String getString(int roll) {
         return mapping.get(roll);
     }
 }

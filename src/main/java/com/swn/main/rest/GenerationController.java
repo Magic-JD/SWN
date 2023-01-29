@@ -20,7 +20,7 @@ public class GenerationController {
 
     @GetMapping("/world")
     @ResponseBody
-    public ResponseEntity<String> generateWorld(){
+    public ResponseEntity<String> generateWorld() {
         return ResponseEntity.ok(world.displayProperties());
     }
 

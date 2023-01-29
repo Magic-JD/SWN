@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public abstract class WildernessEncounterPropertyCreator extends EncounterPropertyCreator {
 
     @Override
-    protected String getFilePackage(){
-        return super.getFilePackage() +  "/wilderness";
+    protected String getFilePackage() {
+        return super.getFilePackage() + "/wilderness";
     }
 }
