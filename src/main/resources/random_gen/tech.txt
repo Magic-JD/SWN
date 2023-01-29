@@ -1,0 +1,7 @@
+2 | TL0, neolithic-level technology
+3 | TL1, medieval technology
+4-5 | TL2, early Industrial Age tech
+6-8 | TL4, modern postech
+9-10 | TL3, tech like that of present-day Earth
+11 | TL4+, postech with specialties
+12 | TL5, pretech with surviving infrastructure

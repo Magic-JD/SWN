@@ -1,0 +1,7 @@
+2 | Remnant biosphere
+3 | Microbial life forms exist
+4-5 | No native biosphere
+6-8 | Human-miscible biosphere
+9-10 | Immiscible biosphere
+11 | Hybrid biosphere
+12 | Engineered biosphere

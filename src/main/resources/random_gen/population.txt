@@ -1,0 +1,7 @@
+2 | Failed colony
+3 | Outpost
+4-5 | Fewer than a million inhabitants
+6-8 | Several million inhabitants
+9-10 | Hundreds of millions of inhabitants
+11 | Billions of inhabitants
+12 | Alien inhabitants

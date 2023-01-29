@@ -25,7 +25,9 @@ public abstract class PropertyCreator {
         return getName() + ": " + mapping.get(roll);
     }
 
-    abstract String getName();
+    private String getName(){
+        return getClass().getSimpleName();
+    }
     private String getFile(){
         return getName().toLowerCase() + ".txt";
     }
