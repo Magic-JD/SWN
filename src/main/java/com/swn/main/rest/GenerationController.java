@@ -1,5 +1,6 @@
 package com.swn.main.rest;
 
+import com.swn.main.encounter.EncounterCreator;
 import com.swn.main.npc.NpcCreator;
 import com.swn.main.world.WorldCreator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,24 +14,37 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/generate")
 public class GenerationController {
 
-    @Autowired WorldCreator worldCreator;
-    @Autowired NpcCreator npcCreator;
+    @Autowired WorldCreator world;
+    @Autowired NpcCreator npc;
+    @Autowired EncounterCreator encounter;
 
     @GetMapping("/world")
     @ResponseBody
     public ResponseEntity<String> generateWorld(){
-        return ResponseEntity.ok(worldCreator.displayProperties());
+        return ResponseEntity.ok(world.displayProperties());
     }
 
     @GetMapping("/npc/standard")
     @ResponseBody
     public ResponseEntity<String> generateStandardNpc() {
-        return ResponseEntity.ok(npcCreator.createStandard());
+        return ResponseEntity.ok(npc.createStandard());
     }
 
     @GetMapping("/npc/patron")
     @ResponseBody
     public ResponseEntity<String> generatePatronNpc() {
-        return ResponseEntity.ok(npcCreator.createPatron());
+        return ResponseEntity.ok(npc.createPatron());
+    }
+
+    @GetMapping("/encounter/wilderness")
+    @ResponseBody
+    public ResponseEntity<String> generateEncounterWilderness() {
+        return ResponseEntity.ok(encounter.createWildernessEncounter());
+    }
+
+    @GetMapping("/encounter/urban")
+    @ResponseBody
+    public ResponseEntity<String> generateEncounterUrban() {
+        return ResponseEntity.ok(encounter.createUrbanEncounter());
     }
 }
