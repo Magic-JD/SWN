@@ -1,0 +1,100 @@
+1 Abandoned Colony 
+26 Flying Cities 
+51 Misandry/Misogyny 
+76 Rigid Culture
+2 Alien Ruins 
+27 Forbidden Tech 
+52 Night World 
+77 Rising Hegemon
+3 Altered Humanity 
+28 Former Warriors 
+53 Nomads 
+78 Ritual Combat
+4 Anarchists 
+29 Freak Geology 
+54 Oceanic World 
+79 Robots
+5 Anthropomorphs 
+30 Freak Weather 
+55 Out of Contact 
+80 Seagoing Cities
+6 Area 51 
+31 Friendly Foe 
+56 Outpost World 
+81 Sealed Menace
+7 Badlands World 
+32 Gold Rush 
+57 Perimeter Agency 
+82 Secret Masters
+8 Battleground 
+33 Great Work 
+58 Pilgrimage Site 
+83 Sectarians
+9 Beastmasters 
+34 Hatred 
+59 Pleasure World 
+84 Seismic Instability
+10 Bubble Cities 
+35 Heavy Industry 
+60 Police State 
+85 Shackled World
+11 Cheap Life 
+36 Heavy Mining 
+61 Post-Scarcity 
+86 Societal Despair
+12 Civil War 
+37 Hivemind 
+62 Preceptor Archive 
+87 Sole Supplier
+13 Cold War 
+38 Holy War 
+63 Pretech Cultists 
+88 Taboo Treasure
+14 Colonized Population 
+39 Hostile Biosphere 
+64 Primitive Aliens 
+89 Terraform Failure
+15 Cultural Power 
+40 Hostile Space 
+65 Prison Planet 
+90 Theocracy
+16 Cybercommunists 
+41 Immortals 
+66 Psionics Academy 
+91 Tomb World
+17 Cyborgs 
+42 Local Specialty 
+67 Psionics Fear 
+92 Trade Hub
+18 Cyclical Doom 
+43 Local Tech 
+68 Psionics Worship 
+93 Tyranny
+19 Desert World 
+44 Major Spaceyard 
+69 Quarantined World 
+94 Unbraked AI
+20 Doomed World 
+45 Mandarinate 
+70 Radioactive World 
+95 Urbanized Surface
+21 Dying Race 
+46 Mandate Base 
+71 Refugees 
+96 Utopia
+22 Eugenic Cult 
+47 Maneaters 
+72 Regional Hegemon 
+97 Warlords
+23 Exchange Consulate 
+48 Megacorps 
+73 Restrictive Laws 
+98 Xenophiles
+24 Fallen Hegemon 
+49 Mercenaries 
+74 Revanchists 
+99 Xenophobes
+25 Feral World 
+50 Minimal Contact 
+75 Revolutionaries 
+100 Zombies
