@@ -1,0 +1,7 @@
+2 | Frozen, locked in perpetual ice
+3 | Cold, dominated by glaciers and tundra
+4-5 | Variable cold with temperate places
+6-8 | Temperate, Earthlike in its ranges
+9-10 | Variable warm, with temperate places
+11 | Warm, tropical and hotter in places
+12 | Burning, intolerably hot on its surface

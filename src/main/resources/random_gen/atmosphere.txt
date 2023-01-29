@@ -1,0 +1,7 @@
+2 | Corrosive, damaging to foreign objects
+3 | Inert gas, useless for respiration
+4 | Airless or thin to the point of suffocation
+5-9 | Breathable mix
+10 | Thick, but breathable with a pressure mask
+11 | Invasive, penetrating suit seals
+12 | Both corrosive and invasive in its effects
