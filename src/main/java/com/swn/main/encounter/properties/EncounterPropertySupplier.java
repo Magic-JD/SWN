@@ -1,10 +1,10 @@
 package com.swn.main.encounter.properties;
 
-import com.swn.main.property.NonRangedPropertyCreator;
+import com.swn.main.property.supplier.NonRangedPropertySupplier;
 import org.springframework.stereotype.Component;
 
 @Component
-public abstract class EncounterPropertyCreator extends NonRangedPropertyCreator {
+public abstract class EncounterPropertySupplier extends NonRangedPropertySupplier {
 
     @Override
     protected String getFilePackage() {

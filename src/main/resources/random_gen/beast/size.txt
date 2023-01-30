@@ -1,0 +1,6 @@
+Cat-sized
+Wolf-sized
+Calf-sized
+Bull-sized
+Hippo-sized
+Elephant-sized

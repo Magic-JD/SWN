@@ -3,5 +3,5 @@ package com.swn.main.npc.standard.properties;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Age extends StandardNpcPropertyCreator {
+public class Age extends StandardNpcPropertySupplier {
 }

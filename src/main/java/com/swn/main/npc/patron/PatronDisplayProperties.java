@@ -1,9 +1,9 @@
 package com.swn.main.npc.patron;
 
-import com.swn.main.npc.patron.properties.PatronNpcPropertyCreator;
-import com.swn.main.property.DisplayProperties;
+import com.swn.main.npc.patron.properties.PatronNpcPropertySupplier;
+import com.swn.main.property.display.DisplayProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-public class PatronDisplayProperties extends DisplayProperties<PatronNpcPropertyCreator> {
+public class PatronDisplayProperties extends DisplayProperties<PatronNpcPropertySupplier> {
 }

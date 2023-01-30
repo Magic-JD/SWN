@@ -3,5 +3,5 @@ package com.swn.main.encounter.wilderness.properties;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Creatures extends WildernessEncounterPropertyCreator {
+public class Creatures extends WildernessEncounterPropertySupplier {
 }

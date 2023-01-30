@@ -1,0 +1,6 @@
+Humanoid
+Quadruped
+Many-legged
+Bulbous
+Amorphous
+Roll twice

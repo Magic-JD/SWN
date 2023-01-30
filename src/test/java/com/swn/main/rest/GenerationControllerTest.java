@@ -1,10 +1,10 @@
 package com.swn.main.rest;
 
-import com.swn.main.encounter.urban.properties.UrbanEncounterPropertyCreator;
-import com.swn.main.encounter.wilderness.properties.WildernessEncounterPropertyCreator;
-import com.swn.main.npc.patron.properties.PatronNpcPropertyCreator;
-import com.swn.main.npc.standard.properties.StandardNpcPropertyCreator;
-import com.swn.main.world.properties.WorldPropertyCreator;
+import com.swn.main.encounter.urban.properties.UrbanEncounterPropertySupplier;
+import com.swn.main.encounter.wilderness.properties.WildernessEncounterPropertySupplier;
+import com.swn.main.npc.patron.properties.PatronNpcPropertySupplier;
+import com.swn.main.npc.standard.properties.StandardNpcPropertySupplier;
+import com.swn.main.world.properties.WorldPropertySupplier;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -19,11 +19,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class GenerationControllerTest {
 
     @Autowired GenerationController controller;
-    @Autowired List<WorldPropertyCreator> worldProperties;
-    @Autowired List<StandardNpcPropertyCreator> standardNpcProperties;
-    @Autowired List<PatronNpcPropertyCreator> patronNpcProperties;
-    @Autowired List<UrbanEncounterPropertyCreator> urbanEncounterProperties;
-    @Autowired List<WildernessEncounterPropertyCreator> wildernessEncounterProperties;
+    @Autowired List<WorldPropertySupplier> worldProperties;
+    @Autowired List<StandardNpcPropertySupplier> standardNpcProperties;
+    @Autowired List<PatronNpcPropertySupplier> patronNpcProperties;
+    @Autowired List<UrbanEncounterPropertySupplier> urbanEncounterProperties;
+    @Autowired List<WildernessEncounterPropertySupplier> wildernessEncounterProperties;
 
     @Test
     public void shouldGenerateWorldWithAllProperties(){
@@ -31,7 +31,7 @@ class GenerationControllerTest {
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
         assertFalse(worldProperties.isEmpty());
-        for(WorldPropertyCreator creator : worldProperties){
+        for(WorldPropertySupplier creator : worldProperties){
             String simpleName = creator.getClass().getSimpleName();
             System.out.println("Testing: " + simpleName);
             assertTrue(response.getBody().contains(simpleName));
@@ -44,7 +44,7 @@ class GenerationControllerTest {
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
         assertFalse(standardNpcProperties.isEmpty());
-        for(StandardNpcPropertyCreator creator : standardNpcProperties){
+        for(StandardNpcPropertySupplier creator : standardNpcProperties){
             String simpleName = creator.getClass().getSimpleName();
             System.out.println("Testing: " + simpleName);
             assertTrue(response.getBody().contains(simpleName), "Does not contain property " + simpleName);
@@ -57,7 +57,7 @@ class GenerationControllerTest {
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
         assertFalse(patronNpcProperties.isEmpty());
-        for(PatronNpcPropertyCreator creator : patronNpcProperties){
+        for(PatronNpcPropertySupplier creator : patronNpcProperties){
             String simpleName = creator.getClass().getSimpleName();
             System.out.println("Testing: " + simpleName);
             assertTrue(response.getBody().contains(simpleName), "Does not contain property " + simpleName);
@@ -70,7 +70,7 @@ class GenerationControllerTest {
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
         assertFalse(urbanEncounterProperties.isEmpty());
-        for(UrbanEncounterPropertyCreator creator : urbanEncounterProperties){
+        for(UrbanEncounterPropertySupplier creator : urbanEncounterProperties){
             String simpleName = creator.getClass().getSimpleName();
             System.out.println("Testing: " + simpleName);
             assertTrue(response.getBody().contains(simpleName), "Does not contain property " + simpleName);
@@ -84,7 +84,7 @@ class GenerationControllerTest {
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
         assertFalse(wildernessEncounterProperties.isEmpty());
-        for(WildernessEncounterPropertyCreator creator : wildernessEncounterProperties){
+        for(WildernessEncounterPropertySupplier creator : wildernessEncounterProperties){
             String simpleName = creator.getClass().getSimpleName();
             System.out.println("Testing: " + simpleName);
             assertTrue(response.getBody().contains(simpleName), "Does not contain property " + simpleName);

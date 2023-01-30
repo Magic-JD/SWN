@@ -1,0 +1,9 @@
+1 | Amphibian, froggish or newtlike
+2 | Bird, winged and feathered
+3 | Fish, scaled and torpedo-bodied
+4 | Insect, beetle-like or fly-winged
+5 | Mammal, hairy and fanged
+6 | Reptile, lizardlike and long-bodied
+7 | Spider, many-legged and fat
+8 | Exotic, made of wholly alien elements
+9-10 | Roll twice and mix the results.
