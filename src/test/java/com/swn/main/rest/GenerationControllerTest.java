@@ -1,5 +1,6 @@
 package com.swn.main.rest;
 
+import com.swn.main.beast.properties.BeastPropertySupplier;
 import com.swn.main.encounter.urban.properties.UrbanEncounterPropertySupplier;
 import com.swn.main.encounter.wilderness.properties.WildernessEncounterPropertySupplier;
 import com.swn.main.npc.patron.properties.PatronNpcPropertySupplier;
@@ -24,6 +25,7 @@ class GenerationControllerTest {
     @Autowired List<PatronNpcPropertySupplier> patronNpcProperties;
     @Autowired List<UrbanEncounterPropertySupplier> urbanEncounterProperties;
     @Autowired List<WildernessEncounterPropertySupplier> wildernessEncounterProperties;
+    @Autowired List<BeastPropertySupplier> beastProperties;
 
     @Test
     public void shouldGenerateWorldWithAllProperties(){
@@ -85,6 +87,19 @@ class GenerationControllerTest {
         assertNotNull(response.getBody());
         assertFalse(wildernessEncounterProperties.isEmpty());
         for(WildernessEncounterPropertySupplier creator : wildernessEncounterProperties){
+            String simpleName = creator.getClass().getSimpleName();
+            System.out.println("Testing: " + simpleName);
+            assertTrue(response.getBody().contains(simpleName), "Does not contain property " + simpleName);
+        }
+    }
+
+    @Test
+    public void shouldGenerateBeastWithAllProperties(){
+        ResponseEntity<String> response = controller.generateBeast();
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertNotNull(response.getBody());
+        assertFalse(beastProperties.isEmpty());
+        for(BeastPropertySupplier creator : beastProperties){
             String simpleName = creator.getClass().getSimpleName();
             System.out.println("Testing: " + simpleName);
             assertTrue(response.getBody().contains(simpleName), "Does not contain property " + simpleName);

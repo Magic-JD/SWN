@@ -6,4 +6,4 @@
 6 | Reptile, lizardlike and long-bodied
 7 | Spider, many-legged and fat
 8 | Exotic, made of wholly alien elements
-9-10 | Roll twice and mix the results.
+9-10 | ; 2d8

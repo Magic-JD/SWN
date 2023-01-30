@@ -3,4 +3,4 @@ Quadruped
 Many-legged
 Bulbous
 Amorphous
-Roll twice
+ ; 2d5

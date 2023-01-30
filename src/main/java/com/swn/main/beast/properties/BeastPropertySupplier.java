@@ -1,18 +1,19 @@
-package com.swn.main.npc.properties;
+package com.swn.main.beast.properties;
 
 import com.swn.main.property.supplier.PropertySupplierImpl;
 import org.springframework.stereotype.Component;
 
 @Component
-public abstract class NpcPropertySupplier extends PropertySupplierImpl {
+public abstract class BeastPropertySupplier extends PropertySupplierImpl {
 
     @Override
     protected String getFilePackage() {
-        return "src/main/resources/random_gen/npc";
+        return "src/main/resources/random_gen/beast";
     }
 
     @Override
     protected int getDiceNumber(){
         return 1;
     }
+
 }

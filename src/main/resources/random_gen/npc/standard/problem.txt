@@ -1,5 +1,4 @@
 They have significant debt or money woes
-A loved one is in trouble; reroll for it
 Romantic failure with a desired person
 Drug or behavioral addiction
 Their superior dislikes or resents them
@@ -8,3 +7,4 @@ They hate their job or life situation
 Someone dangerous is targeting them
 They’re pursuing a disastrous purpose
 They have no problems worth mentioning
+A loved one is in trouble; 1d9

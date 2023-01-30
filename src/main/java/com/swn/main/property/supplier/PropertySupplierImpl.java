@@ -1,11 +1,16 @@
 package com.swn.main.property.supplier;
 
+import com.swn.main.dice.Dice;
 import com.swn.main.property.Property;
 import com.swn.main.resourceextractor.ResourceExtractor;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.Collection;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public abstract class PropertySupplierImpl implements PropertySupplier {
 
@@ -13,21 +18,8 @@ public abstract class PropertySupplierImpl implements PropertySupplier {
     protected List<Property> properties;
 
     @PostConstruct
-    protected void initProperties() {
-        properties = supplyProperties();
-    }
-
-    protected abstract List<Property> supplyProperties();
-
-    protected abstract int getRoll();
-
-    protected String getString(int roll) {
-        return properties
-                .stream()
-                .filter(property -> property.matchesRoll(roll))
-                .findAny()
-                .map(Property::getDescription)
-                .orElseThrow(RuntimeException::new);
+    private void initProperties() {
+        properties = resourceExtractor.resourceMapping(getFile());
     }
 
     @Override
@@ -36,13 +28,43 @@ public abstract class PropertySupplierImpl implements PropertySupplier {
         return getName() + ": " + getString(roll);
     }
 
+    protected abstract String getFilePackage();
+
+    protected abstract int getDiceNumber();
+
+    private int getRoll() {
+        return Dice.rollXDN(getDiceNumber(), properties.stream()
+                .mapToInt(Property::getMaxRoll)
+                .max()
+                .orElseThrow(RuntimeException::new)/getDiceNumber());
+    }
+
+    private Stream<Property> getProperties(int roll) {
+        return properties
+                .stream()
+                .filter(property -> property.matchesRoll(roll))
+                .findAny().stream()
+                .flatMap(property ->
+                        Stream.concat(
+                                Stream.of(property),
+                                property.provideFurtherRolls()
+                                        .stream()
+                                        .flatMap(this::getProperties)));
+
+    }
+
+    private String getString(int roll){
+        return getProperties(roll)
+                .map(Property::getDescription)
+                .filter(s -> !s.isBlank())
+                .collect(Collectors.joining(" - "));
+    }
+
     private String getName() {
         return getClass().getSimpleName();
     }
 
-    protected String getFile() {
+    private String getFile() {
         return getFilePackage() + "/" + getName().toLowerCase() + ".txt";
     }
-
-    protected abstract String getFilePackage();
 }

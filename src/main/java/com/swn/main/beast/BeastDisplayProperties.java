@@ -1,0 +1,10 @@
+package com.swn.main.beast;
+
+import com.swn.main.beast.properties.BeastPropertySupplier;
+import com.swn.main.npc.standard.properties.StandardNpcPropertySupplier;
+import com.swn.main.property.display.DisplayProperties;
+import org.springframework.stereotype.Component;
+
+@Component
+public class BeastDisplayProperties extends DisplayProperties<BeastPropertySupplier> {
+}

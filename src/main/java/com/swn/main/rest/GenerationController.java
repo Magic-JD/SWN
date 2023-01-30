@@ -1,5 +1,6 @@
 package com.swn.main.rest;
 
+import com.swn.main.beast.BeastCreator;
 import com.swn.main.encounter.EncounterCreator;
 import com.swn.main.npc.NpcCreator;
 import com.swn.main.world.WorldCreator;
@@ -17,6 +18,7 @@ public class GenerationController {
     @Autowired WorldCreator world;
     @Autowired NpcCreator npc;
     @Autowired EncounterCreator encounter;
+    @Autowired BeastCreator beast;
 
     @GetMapping("/world")
     @ResponseBody
@@ -46,5 +48,11 @@ public class GenerationController {
     @ResponseBody
     public ResponseEntity<String> generateEncounterUrban() {
         return ResponseEntity.ok(encounter.createUrbanEncounter());
+    }
+
+    @GetMapping("/beast")
+    @ResponseBody
+    public ResponseEntity<String> generateBeast() {
+        return ResponseEntity.ok(beast.createBeast());
     }
 }
