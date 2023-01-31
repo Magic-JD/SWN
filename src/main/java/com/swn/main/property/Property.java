@@ -9,7 +9,7 @@ public interface Property {
 
     int getMaxRoll();
 
-    String getDescription();
+    String getPropertyDetails();
 
     boolean matchesRoll(int roll);
 

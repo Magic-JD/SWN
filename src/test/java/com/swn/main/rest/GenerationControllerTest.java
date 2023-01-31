@@ -6,6 +6,8 @@ import com.swn.main.encounter.wilderness.properties.WildernessEncounterPropertyS
 import com.swn.main.npc.patron.properties.PatronNpcPropertySupplier;
 import com.swn.main.npc.properties.NpcPropertySupplier;
 import com.swn.main.npc.standard.properties.StandardNpcPropertySupplier;
+import com.swn.main.npc.universal.UniversalNpcDisplayProperties;
+import com.swn.main.npc.universal.properties.UniversalNpcPropertySupplier;
 import com.swn.main.property.supplier.PropertySupplier;
 import com.swn.main.world.properties.WorldPropertySupplier;
 import org.junit.jupiter.api.Test;
@@ -30,6 +32,7 @@ class GenerationControllerTest {
     @Autowired List<UrbanEncounterPropertySupplier> urbanEncounterProperties;
     @Autowired List<WildernessEncounterPropertySupplier> wildernessEncounterProperties;
     @Autowired List<BeastPropertySupplier> beastProperties;
+    @Autowired List<UniversalNpcPropertySupplier> universalNpcProperties;
 
     @Test
     public void shouldGenerateWorldWithAllProperties(){
@@ -50,7 +53,9 @@ class GenerationControllerTest {
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
         assertFalse(standardNpcProperties.isEmpty());
-        for(StandardNpcPropertySupplier creator : standardNpcProperties){
+        List<NpcPropertySupplier> suppliers = Stream.concat(universalNpcProperties.stream(), standardNpcProperties.stream()).toList();
+
+        for(NpcPropertySupplier creator : suppliers){
             String simpleName = creator.getClass().getSimpleName();
             System.out.println("Testing: " + simpleName);
             assertTrue(response.getBody().contains(simpleName), "Does not contain property " + simpleName);
@@ -63,7 +68,7 @@ class GenerationControllerTest {
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
         assertFalse(patronNpcProperties.isEmpty());
-        List<NpcPropertySupplier> suppliers = Stream.concat(patronNpcProperties.stream(), standardNpcProperties.stream()).toList();
+        List<NpcPropertySupplier> suppliers = Stream.concat(universalNpcProperties.stream(), Stream.concat(patronNpcProperties.stream(), standardNpcProperties.stream())).toList();
         for(NpcPropertySupplier creator : suppliers){
             String simpleName = creator.getClass().getSimpleName();
             System.out.println("Testing: " + simpleName);

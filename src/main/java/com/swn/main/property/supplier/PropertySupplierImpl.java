@@ -2,23 +2,22 @@ package com.swn.main.property.supplier;
 
 import com.swn.main.dice.Dice;
 import com.swn.main.property.Property;
+import com.swn.main.property.PropertyImpl;
 import com.swn.main.resourceextractor.ResourceExtractor;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.Collection;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public abstract class PropertySupplierImpl implements PropertySupplier {
 
-    @Autowired ResourceExtractor resourceExtractor;
+    @Autowired protected ResourceExtractor resourceExtractor;
     protected List<Property> properties;
 
     @PostConstruct
-    private void initProperties() {
+    protected void initProperties() {
         properties = resourceExtractor.resourceMapping(getFile());
     }
 
@@ -32,7 +31,7 @@ public abstract class PropertySupplierImpl implements PropertySupplier {
 
     protected abstract int getDiceNumber();
 
-    private int getRoll() {
+    protected int getRoll() {
         return Dice.rollXDN(getDiceNumber(), properties.stream()
                 .mapToInt(Property::getMaxRoll)
                 .max()
@@ -43,7 +42,8 @@ public abstract class PropertySupplierImpl implements PropertySupplier {
         return properties
                 .stream()
                 .filter(property -> property.matchesRoll(roll))
-                .findAny().stream()
+                .findAny()
+                .stream()
                 .flatMap(property ->
                         Stream.concat(
                                 Stream.of(property),
@@ -53,14 +53,14 @@ public abstract class PropertySupplierImpl implements PropertySupplier {
 
     }
 
-    private String getString(int roll){
+    protected String getString(int roll){
         return getProperties(roll)
-                .map(Property::getDescription)
+                .map(Property::getPropertyDetails)
                 .filter(s -> !s.isBlank())
                 .collect(Collectors.joining(" - "));
     }
 
-    private String getName() {
+    protected String getName() {
         return getClass().getSimpleName();
     }
 

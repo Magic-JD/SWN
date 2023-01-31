@@ -26,7 +26,7 @@ public class PropertyImpl implements Property {
     }
 
     @Override
-    public String getDescription(){
+    public String getPropertyDetails(){
         return description;
     }
 
