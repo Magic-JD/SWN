@@ -2,7 +2,6 @@ package com.swn.main.property.supplier;
 
 import com.swn.main.dice.Dice;
 import com.swn.main.property.Property;
-import com.swn.main.property.PropertyImpl;
 import com.swn.main.resourceextractor.ResourceExtractor;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +34,7 @@ public abstract class PropertySupplierImpl implements PropertySupplier {
         return Dice.rollXDN(getDiceNumber(), properties.stream()
                 .mapToInt(Property::getMaxRoll)
                 .max()
-                .orElseThrow(RuntimeException::new)/getDiceNumber());
+                .orElseThrow(RuntimeException::new) / getDiceNumber());
     }
 
     private Stream<Property> getProperties(int roll) {
@@ -53,7 +52,7 @@ public abstract class PropertySupplierImpl implements PropertySupplier {
 
     }
 
-    protected String getString(int roll){
+    protected String getString(int roll) {
         return getProperties(roll)
                 .map(Property::getPropertyDetails)
                 .filter(s -> !s.isBlank())

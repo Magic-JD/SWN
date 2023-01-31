@@ -20,13 +20,11 @@ public class ResourceExtractor {
         try (Scanner scanner = new Scanner(new File(resourceName))) {
             while (scanner.hasNext()) {
                 String line = scanner.nextLine();
-                if(line.startsWith("PSP")){
+                if (line.startsWith("PSP")) {
                     properties.add(psp(count, line, resourceName));
-                }
-                else if(line.startsWith("DPP")){
+                } else if (line.startsWith("DPP")) {
                     properties.add(dpp(count, line, resourceName));
-                }
-                else if(line.contains("|")){
+                } else if (line.contains("|")) {
                     properties.add(ranged(line));
                 } else {
                     properties.add(fromString(count, line));
@@ -39,7 +37,7 @@ public class ResourceExtractor {
         return properties;
     }
 
-    private Property dpp(int count, String line, String resourceName){
+    private Property dpp(int count, String line, String resourceName) {
         String[] split = line.split("\\|");
         String filePath = resourceName.replace(".txt", "");
         List<String> filePathExtention = Arrays.stream(split[1].trim().split(","))
@@ -53,10 +51,10 @@ public class ResourceExtractor {
         String[] split = line.split("\\|");
         String filePath = resourceName.replace(".txt", "");
         String filePathExtention = split[1].trim();
-        return new PropertySupplierPropertyImpl("", count, count, filePath+filePathExtention, this);
+        return new PropertySupplierPropertyImpl("", count, count, filePath + filePathExtention, this);
     }
 
-    private Property ranged(String string){
+    private Property ranged(String string) {
         String[] split = string.split("\\|");
         split[0] = split[0].trim();
         if (split[0].contains("-")) {
@@ -67,13 +65,13 @@ public class ResourceExtractor {
         }
     }
 
-    private Property fromString(int number, String descriptionString){
+    private Property fromString(int number, String descriptionString) {
         return fromString(number, number, descriptionString);
     }
 
-    private Property fromString(int startNumber, int endNumber, String descriptionString){
+    private Property fromString(int startNumber, int endNumber, String descriptionString) {
         String[] split = descriptionString.split(";");
-        if(split.length == 1){
+        if (split.length == 1) {
             return new PropertyImpl(split[0], startNumber, endNumber);
         } else {
             String dice = split[1].trim();

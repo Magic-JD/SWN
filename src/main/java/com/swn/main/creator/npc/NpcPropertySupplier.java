@@ -12,7 +12,7 @@ public abstract class NpcPropertySupplier extends PropertySupplierImpl {
     }
 
     @Override
-    protected int getDiceNumber(){
+    protected int getDiceNumber() {
         return 1;
     }
 }

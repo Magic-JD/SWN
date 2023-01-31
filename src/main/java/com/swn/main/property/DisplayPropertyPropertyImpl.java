@@ -12,8 +12,8 @@ import java.util.stream.Collectors;
 
 public class DisplayPropertyPropertyImpl extends DisplayProperties<PropertySupplierImpl> implements Property {
 
-    private int startNumber;
-    private int endNumber;
+    private final int startNumber;
+    private final int endNumber;
 
     public DisplayPropertyPropertyImpl(int startNumber, int endNumber, List<String> propertyLink, ResourceExtractor re) {
         this.startNumber = startNumber;
@@ -49,16 +49,17 @@ public class DisplayPropertyPropertyImpl extends DisplayProperties<PropertySuppl
     }
 
     @Override
-    public String getPropertyDetails(){
+    public String getPropertyDetails() {
         return displayProperties();
     }
 
     @Override
-    public boolean matchesRoll(int roll){
+    public boolean matchesRoll(int roll) {
         return roll >= startNumber && roll <= endNumber;
     }
 
-    @Override public List<Integer> provideFurtherRolls(){
+    @Override
+    public List<Integer> provideFurtherRolls() {
         return Collections.emptyList();
     }
 

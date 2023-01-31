@@ -5,9 +5,9 @@ import java.util.List;
 
 public class PropertyImpl implements Property {
 
-    private String description;
-    private int startNumber;
-    private int endNumber;
+    private final String description;
+    private final int startNumber;
+    private final int endNumber;
 
     public PropertyImpl(String description, int startNumber, int endNumber) {
         this.description = description;
@@ -21,16 +21,17 @@ public class PropertyImpl implements Property {
     }
 
     @Override
-    public String getPropertyDetails(){
+    public String getPropertyDetails() {
         return description;
     }
 
     @Override
-    public boolean matchesRoll(int roll){
+    public boolean matchesRoll(int roll) {
         return roll >= startNumber && roll <= endNumber;
     }
 
-    @Override public List<Integer> provideFurtherRolls(){
+    @Override
+    public List<Integer> provideFurtherRolls() {
         return Collections.emptyList();
     }
 }

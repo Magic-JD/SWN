@@ -9,10 +9,10 @@ import java.util.List;
 
 public class PropertySupplierPropertyImpl extends PropertySupplierImpl implements Property {
 
-    private String description;
-    private int startNumber;
-    private int endNumber;
-    private String propertyLink;
+    private final String description;
+    private final int startNumber;
+    private final int endNumber;
+    private final String propertyLink;
 
     public PropertySupplierPropertyImpl(String description, int startNumber, int endNumber, String propertyLink, ResourceExtractor resourceExtractor) {
         this.description = description;
@@ -34,16 +34,17 @@ public class PropertySupplierPropertyImpl extends PropertySupplierImpl implement
     }
 
     @Override
-    public String getPropertyDetails(){
+    public String getPropertyDetails() {
         return getString(getRoll());
     }
 
     @Override
-    public boolean matchesRoll(int roll){
+    public boolean matchesRoll(int roll) {
         return roll >= startNumber && roll <= endNumber;
     }
 
-    @Override public List<Integer> provideFurtherRolls(){
+    @Override
+    public List<Integer> provideFurtherRolls() {
         return Collections.emptyList();
     }
 

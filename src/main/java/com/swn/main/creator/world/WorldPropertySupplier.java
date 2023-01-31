@@ -12,7 +12,7 @@ public abstract class WorldPropertySupplier extends PropertySupplierImpl {
     }
 
     @Override
-    protected int getDiceNumber(){
+    protected int getDiceNumber() {
         return 2;
     }
 }

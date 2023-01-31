@@ -27,9 +27,9 @@ public class Dice {
         return total;
     }
 
-    public static List<Integer> rollXDNNonRepeating(int x, int n){
+    public static List<Integer> rollXDNNonRepeating(int x, int n) {
         return rand
-                .ints(1, n+1)
+                .ints(1, n + 1)
                 .distinct()
                 .limit(x)
                 .boxed()

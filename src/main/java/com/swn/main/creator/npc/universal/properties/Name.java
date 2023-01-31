@@ -4,4 +4,5 @@ import com.swn.main.creator.npc.universal.UniversalNpcPropertySupplier;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Name extends UniversalNpcPropertySupplier {}
+public class Name extends UniversalNpcPropertySupplier {
+}
