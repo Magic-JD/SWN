@@ -9,13 +9,11 @@ import java.util.List;
 
 public class PropertySupplierPropertyImpl extends PropertySupplierImpl implements Property {
 
-    private final String description;
     private final int startNumber;
     private final int endNumber;
     private final String propertyLink;
 
-    public PropertySupplierPropertyImpl(String description, int startNumber, int endNumber, String propertyLink, ResourceExtractor resourceExtractor) {
-        this.description = description;
+    public PropertySupplierPropertyImpl(int startNumber, int endNumber, String propertyLink, ResourceExtractor resourceExtractor) {
         this.startNumber = startNumber;
         this.endNumber = endNumber;
         this.propertyLink = propertyLink;

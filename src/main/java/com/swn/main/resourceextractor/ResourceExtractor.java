@@ -51,7 +51,7 @@ public class ResourceExtractor {
         String[] split = line.split("\\|");
         String filePath = resourceName.replace(".txt", "");
         String filePathExtention = split[1].trim();
-        return new PropertySupplierPropertyImpl("", count, count, filePath + filePathExtention, this);
+        return new PropertySupplierPropertyImpl(count, count, filePath + filePathExtention, this);
     }
 
     private Property ranged(String string) {
