@@ -1,2 +1,10 @@
 PSP | /regional/arabic.txt
 PSP | /regional/chinese.txt
+PSP | /regional/english.txt
+PSP | /regional/greek.txt
+PSP | /regional/indian.txt
+PSP | /regional/japanese.txt
+PSP | /regional/latin.txt
+PSP | /regional/nigerian.txt
+PSP | /regional/russian.txt
+PSP | /regional/spanish.txt
