@@ -4,7 +4,9 @@ import com.swn.main.beast.properties.BeastPropertySupplier;
 import com.swn.main.encounter.urban.properties.UrbanEncounterPropertySupplier;
 import com.swn.main.encounter.wilderness.properties.WildernessEncounterPropertySupplier;
 import com.swn.main.npc.patron.properties.PatronNpcPropertySupplier;
+import com.swn.main.npc.properties.NpcPropertySupplier;
 import com.swn.main.npc.standard.properties.StandardNpcPropertySupplier;
+import com.swn.main.property.supplier.PropertySupplier;
 import com.swn.main.world.properties.WorldPropertySupplier;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +15,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -59,7 +63,8 @@ class GenerationControllerTest {
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
         assertFalse(patronNpcProperties.isEmpty());
-        for(PatronNpcPropertySupplier creator : patronNpcProperties){
+        List<NpcPropertySupplier> suppliers = Stream.concat(patronNpcProperties.stream(), standardNpcProperties.stream()).toList();
+        for(NpcPropertySupplier creator : suppliers){
             String simpleName = creator.getClass().getSimpleName();
             System.out.println("Testing: " + simpleName);
             assertTrue(response.getBody().contains(simpleName), "Does not contain property " + simpleName);

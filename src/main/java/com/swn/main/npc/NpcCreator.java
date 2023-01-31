@@ -15,6 +15,6 @@ public class NpcCreator {
     }
 
     public String createPatron() {
-        return patron.displayProperties();
+        return standard.displayProperties() + "\n" + patron.displayProperties();
     }
 }
