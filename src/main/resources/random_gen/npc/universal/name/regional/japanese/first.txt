@@ -1,25 +1,50 @@
-Akira
-Daisuke
-Fukashi
-Goro
-Hiro
-Hiroya
-Hotaka
-Katsu
-Katsuto
-Keishuu
-Kyuuto
-Mikiya
-Mitsunobu
-Mitsuru
-Naruhiko
-Nobu
-Shigeo
-Shigeto
-Shou
-Shuji
-Takaharu
-Teruaki
-Tetsushi
-Tsukasa
-Yasuharu
+Male - Akira
+Male - Daisuke
+Male - Fukashi
+Male - Goro
+Male - Hiro
+Male - Hiroya
+Male - Hotaka
+Male - Katsu
+Male - Katsuto
+Male - Keishuu
+Male - Kyuuto
+Male - Mikiya
+Male - Mitsunobu
+Male - Mitsuru
+Male - Naruhiko
+Male - Nobu
+Male - Shigeo
+Male - Shigeto
+Male - Shou
+Male - Shuji
+Male - Takaharu
+Male - Teruaki
+Male - Tetsushi
+Male - Tsukasa
+Male - Yasuharu
+Female - Aemi
+Female - Airi
+Female - Ako
+Female - Ayu
+Female - Chikaze
+Female - Eriko
+Female - Hina
+Female - Kaori
+Female - Keiko
+Female - Kyouka
+Female - Mayumi
+Female - Miho
+Female - Namiko
+Female - Natsu
+Female - Nobuko
+Female - Rei
+Female - Ririsa
+Female - Sakimi
+Female - Shihoko
+Female - Shika
+Female - Tsukiko
+Female - Tsuzune
+Female - Yoriko
+Female - Yorimi
+Female - Yoshiko

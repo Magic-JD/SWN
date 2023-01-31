@@ -1,25 +1,50 @@
-Alexander
-Alexius
-Anastasius
-Christodoulos
-Christos
-Damian
-Dimitris
-Dysmas
-Elias
-Giorgos
-Ioannis
-Konstantinos
-Lambros
-Leonidas
-Marcos
-Miltiades
-Nestor
-Nikos
-Orestes
-Petros
-Simon
-Stavros
-Theodore
-Vassilios
-Yannis
+Male - Alexander
+Male - Alexius
+Male - Anastasius
+Male - Christodoulos
+Male - Christos
+Male - Damian
+Male - Dimitris
+Male - Dysmas
+Male - Elias
+Male - Giorgos
+Male - Ioannis
+Male - Konstantinos
+Male - Lambros
+Male - Leonidas
+Male - Marcos
+Male - Miltiades
+Male - Nestor
+Male - Nikos
+Male - Orestes
+Male - Petros
+Male - Simon
+Male - Stavros
+Male - Theodore
+Male - Vassilios
+Male - Yannis
+Female - Alexandra
+Female - Amalia
+Female - Callisto
+Female - Charis
+Female - Chloe
+Female - Dorothea
+Female - Elena
+Female - Eudoxia
+Female - Giada
+Female - Helena
+Female - Ioanna
+Female - Lydia
+Female - Melania
+Female - Melissa
+Female - Nika
+Female - Nikolina
+Female - Olympias
+Female - Philippa
+Female - Phoebe
+Female - Sophia
+Female - Theodora
+Female - Valentina
+Female - Valeria
+Female - Yianna
+Female - Zoe
