@@ -40,18 +40,18 @@ public class ResourceExtractor {
     private Property dpp(int count, String line, String resourceName) {
         String[] split = line.split("\\|");
         String filePath = resourceName.replace(".txt", "");
-        List<String> filePathExtention = Arrays.stream(split[1].trim().split(","))
+        List<String> filePathExtension = Arrays.stream(split[1].trim().split(","))
                 .map(String::trim)
                 .map(s -> filePath + s)
                 .collect(Collectors.toList());
-        return new DisplayPropertyPropertyImpl(count, count, filePathExtention, this);
+        return new DisplayPropertyPropertyImpl(count, count, filePathExtension, this);
     }
 
     private Property psp(int count, String line, String resourceName) {
         String[] split = line.split("\\|");
         String filePath = resourceName.replace(".txt", "");
-        String filePathExtention = split[1].trim();
-        return new PropertySupplierPropertyImpl(count, count, filePath + filePathExtention, this);
+        String filePathExtension = split[1].trim();
+        return new PropertySupplierPropertyImpl(count, count, filePath + filePathExtension, this);
     }
 
     private Property ranged(String string) {
