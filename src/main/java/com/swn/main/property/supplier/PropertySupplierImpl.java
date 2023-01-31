@@ -17,12 +17,12 @@ public abstract class PropertySupplierImpl implements PropertySupplier {
     protected List<Property> properties;
 
     @PostConstruct
-    protected void initProperties() {
+    public void initProperties() {
         properties = resourceExtractor.resourceMapping(getFile());
     }
 
     @Override
-    public String getPropertyDetails() {
+    public String getPropertyString() {
         int roll = getRoll();
         return getName() + ": " + getString(roll);
     }

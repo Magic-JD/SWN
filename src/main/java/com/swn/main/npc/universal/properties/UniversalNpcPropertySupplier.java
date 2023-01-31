@@ -5,4 +5,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public abstract class UniversalNpcPropertySupplier extends NpcPropertySupplier {
+
+    @Override
+    protected String getFilePackage() {
+        return super.getFilePackage() + "/universal";
+    }
 }

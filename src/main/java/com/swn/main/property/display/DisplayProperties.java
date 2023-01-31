@@ -8,12 +8,12 @@ import java.util.stream.Collectors;
 
 public abstract class DisplayProperties<T extends PropertySupplier> {
 
-    @Autowired List<T> properties;
+    @Autowired protected List<T> properties;
 
     public String displayProperties() {
         return properties
                 .stream()
-                .map(PropertySupplier::getPropertyDetails)
+                .map(PropertySupplier::getPropertyString)
                 .collect(Collectors.joining("\n"));
     }
 }

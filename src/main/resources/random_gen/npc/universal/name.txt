@@ -1,0 +1,2 @@
+PSP | /regional/arabic.txt
+PSP | /regional/chinese.txt

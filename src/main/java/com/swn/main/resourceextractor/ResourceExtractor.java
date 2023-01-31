@@ -1,15 +1,15 @@
 package com.swn.main.resourceextractor;
 
-import com.swn.main.property.Property;
-import com.swn.main.property.PropertyImpl;
-import com.swn.main.property.RepeatingProperty;
+import com.swn.main.property.*;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 @Component
 public class ResourceExtractor {
@@ -20,7 +20,13 @@ public class ResourceExtractor {
         try (Scanner scanner = new Scanner(new File(resourceName))) {
             while (scanner.hasNext()) {
                 String line = scanner.nextLine();
-                if(line.contains("|")){
+                if(line.startsWith("PSP")){
+                    properties.add(psp(count, line, resourceName));
+                }
+                else if(line.startsWith("DPP")){
+                    properties.add(dpp(count, line, resourceName));
+                }
+                else if(line.contains("|")){
                     properties.add(ranged(line));
                 } else {
                     properties.add(fromString(count, line));
@@ -31,6 +37,23 @@ public class ResourceExtractor {
             throw new RuntimeException(e);
         }
         return properties;
+    }
+
+    private Property dpp(int count, String line, String resourceName){
+        String[] split = line.split("\\|");
+        String filePath = resourceName.replace(".txt", "");
+        List<String> filePathExtention = Arrays.stream(split[1].trim().split(","))
+                .map(String::trim)
+                .map(s -> filePath + s)
+                .collect(Collectors.toList());
+        return new DisplayPropertyPropertyImpl(count, count, filePathExtention, this);
+    }
+
+    private Property psp(int count, String line, String resourceName) {
+        String[] split = line.split("\\|");
+        String filePath = resourceName.replace(".txt", "");
+        String filePathExtention = split[1].trim();
+        return new PropertySupplierPropertyImpl("", count, count, filePath+filePathExtention, this);
     }
 
     private Property ranged(String string){

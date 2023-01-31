@@ -1,12 +1,7 @@
 package com.swn.main.property;
 
-import com.swn.main.dice.Dice;
-
 import java.util.Collections;
 import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class PropertyImpl implements Property {
 
