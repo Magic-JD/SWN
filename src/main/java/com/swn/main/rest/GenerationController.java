@@ -1,9 +1,9 @@
 package com.swn.main.rest;
 
-import com.swn.main.beast.BeastCreator;
-import com.swn.main.encounter.EncounterCreator;
-import com.swn.main.npc.NpcCreator;
-import com.swn.main.world.WorldCreator;
+import com.swn.main.creator.beast.BeastCreator;
+import com.swn.main.creator.encounter.EncounterCreator;
+import com.swn.main.creator.npc.NpcCreator;
+import com.swn.main.creator.world.WorldCreator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
