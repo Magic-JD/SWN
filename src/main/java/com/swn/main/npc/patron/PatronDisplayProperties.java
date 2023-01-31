@@ -1,6 +1,5 @@
 package com.swn.main.npc.patron;
 
-import com.swn.main.npc.patron.properties.PatronNpcPropertySupplier;
 import com.swn.main.property.display.DisplayProperties;
 import org.springframework.stereotype.Component;
 

@@ -1,15 +1,13 @@
 package com.swn.main.rest;
 
-import com.swn.main.beast.properties.BeastPropertySupplier;
-import com.swn.main.encounter.urban.properties.UrbanEncounterPropertySupplier;
-import com.swn.main.encounter.wilderness.properties.WildernessEncounterPropertySupplier;
-import com.swn.main.npc.patron.properties.PatronNpcPropertySupplier;
-import com.swn.main.npc.properties.NpcPropertySupplier;
-import com.swn.main.npc.standard.properties.StandardNpcPropertySupplier;
-import com.swn.main.npc.universal.UniversalNpcDisplayProperties;
-import com.swn.main.npc.universal.properties.UniversalNpcPropertySupplier;
-import com.swn.main.property.supplier.PropertySupplier;
-import com.swn.main.world.properties.WorldPropertySupplier;
+import com.swn.main.beast.BeastPropertySupplier;
+import com.swn.main.encounter.urban.UrbanEncounterPropertySupplier;
+import com.swn.main.encounter.wilderness.WildernessEncounterPropertySupplier;
+import com.swn.main.npc.patron.PatronNpcPropertySupplier;
+import com.swn.main.npc.NpcPropertySupplier;
+import com.swn.main.npc.standard.StandardNpcPropertySupplier;
+import com.swn.main.npc.universal.UniversalNpcPropertySupplier;
+import com.swn.main.world.WorldPropertySupplier;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -17,7 +15,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;

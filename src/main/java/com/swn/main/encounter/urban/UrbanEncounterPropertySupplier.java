@@ -1,6 +1,6 @@
-package com.swn.main.encounter.urban.properties;
+package com.swn.main.encounter.urban;
 
-import com.swn.main.encounter.properties.EncounterPropertySupplier;
+import com.swn.main.encounter.EncounterPropertySupplier;
 import org.springframework.stereotype.Component;
 
 @Component

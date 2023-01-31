@@ -1,4 +1,4 @@
-package com.swn.main.world.properties;
+package com.swn.main.world;
 
 import com.swn.main.property.supplier.PropertySupplierImpl;
 import org.springframework.stereotype.Component;

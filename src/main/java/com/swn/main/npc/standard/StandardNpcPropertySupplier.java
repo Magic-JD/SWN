@@ -1,6 +1,6 @@
-package com.swn.main.npc.standard.properties;
+package com.swn.main.npc.standard;
 
-import com.swn.main.npc.properties.NpcPropertySupplier;
+import com.swn.main.npc.NpcPropertySupplier;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,18 +1,19 @@
-package com.swn.main.encounter.properties;
+package com.swn.main.beast;
 
 import com.swn.main.property.supplier.PropertySupplierImpl;
 import org.springframework.stereotype.Component;
 
 @Component
-public abstract class EncounterPropertySupplier extends PropertySupplierImpl {
+public abstract class BeastPropertySupplier extends PropertySupplierImpl {
 
     @Override
     protected String getFilePackage() {
-        return "src/main/resources/random_gen/encounter";
+        return "src/main/resources/random_gen/beast";
     }
 
     @Override
     protected int getDiceNumber(){
         return 1;
     }
+
 }

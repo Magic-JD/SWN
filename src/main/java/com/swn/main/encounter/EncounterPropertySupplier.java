@@ -1,14 +1,14 @@
-package com.swn.main.npc.properties;
+package com.swn.main.encounter;
 
 import com.swn.main.property.supplier.PropertySupplierImpl;
 import org.springframework.stereotype.Component;
 
 @Component
-public abstract class NpcPropertySupplier extends PropertySupplierImpl {
+public abstract class EncounterPropertySupplier extends PropertySupplierImpl {
 
     @Override
     protected String getFilePackage() {
-        return "src/main/resources/random_gen/npc";
+        return "src/main/resources/random_gen/encounter";
     }
 
     @Override
