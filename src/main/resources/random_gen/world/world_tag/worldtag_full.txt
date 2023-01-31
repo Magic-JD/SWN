@@ -9,7 +9,7 @@ colony are usually in ruins, and might still be dangerous from the aftermath of 
 in the first place.
 E Crazed survivors, Ruthless plunderers of the
 ruins, Automated defense system
-F Inquisitive stellar archaeologist, Heir to the colony’s property, Local wanting the place cleaned
+F Inquisitive stellar archaeologist, Heir to the colony's property, Local wanting the place cleaned
 out and made safe
 C The local government wants the ruins to remain
 a secret, The locals claim ownership of it, The
@@ -99,7 +99,7 @@ P Shrine to a feral deity, Nature preserve suited to
 an animal type, Living site built to take advantage of animal traits
 
 Area 51
-The world’s government is fully aware of their local
+The world's government is fully aware of their local
 stellar neighbors, but the common populace has no
 idea about it- and the government means to keep
 it that way. Trade with government officials in remote locations is possible, but any attempt to clue the
@@ -169,7 +169,7 @@ Public plaza designed to accommodate animal
 companions, Factory full of animal workers
 
 Bubble Cities
-Whether due to a lack of atmosphere or an uninhabitable climate, the world’s cities exist within domes or
+Whether due to a lack of atmosphere or an uninhabitable climate, the world's cities exist within domes or
 pressurized buildings. In such sealed environments,
 techniques of surveillance and control can grow baroque and extreme.
 E Native dreading outsider contamination, Saboteur from another bubble city, Local official
@@ -179,7 +179,7 @@ new building sites
 C Bubble rupture, Failing atmosphere reprocessor, Native revolt against officials, All-seeing
 surveillance cameras
 T Pretech habitat technology, Valuable industrial
-products, Master key codes to a city’s security
+products, Master key codes to a city's security
 system
 P City power core, Surface of the bubble, Hydroponics complex, Warren-like hab block
 
@@ -223,15 +223,15 @@ light zone, Propaganda broadcast tower
 
 Cold War
 Two or more great powers control the planet, and
-they have a hostility to each other that’s just barely
+they have a hostility to each other that's just barely
 less than open warfare. The hostility might be ideological in nature, or it might revolve around control
 of some local resource.
 E Suspicious chief of intelligence, Native who
 thinks the outworlders are with the other side,
 Femme fatale
 F Apolitical information broker, Spy for the other
-side, Unjustly accused innocent, “He’s a bastard,
-but he’s our bastard” official
+side, Unjustly accused innocent, “He's a bastard,
+but he's our bastard” official
 C Police sweep, Low-level skirmishing, “Red scare”
 T List of traitors in government, secret military
 plans, Huge cache of weapons built up in preparation for war
@@ -239,13 +239,13 @@ P Seedy bar in a neutral area, Political rally, Isolated area where fighting is 
 
 Colonized Population
 A neighboring world has successfully colonized this
-less-advanced or less-organized planet, and the natives aren’t happy about it. A puppet government
+less-advanced or less-organized planet, and the natives aren't happy about it. A puppet government
 may exist, but all real decisions are made by the local
 viceroy.
 E Suspicious security personnel, Offworlder-hating natives, Local crime boss preying on rich
 offworlders
 F Native resistance leader, Colonial official seeking help, Native caught between the two sides
-C Natives won’t talk to offworlders, Colonial repression, Misunderstood local customs
+C Natives won't talk to offworlders, Colonial repression, Misunderstood local customs
 T Relic of the resistance movement, List of collaborators, Precious substance extracted by colonial
 labor
 P Deep wilderness resistance camp, City district
@@ -266,7 +266,7 @@ C The art is slowly lethal to its masters, The art
 is mentally or physically addictive, The art is a
 fragment of ancient technical or military science
 T The instrument of a legendary master, The only
-copy of a dead master’s opus, Proof of intellectual property ownership
+copy of a dead master's opus, Proof of intellectual property ownership
 P Recording or performance studio, Public festival choked with tourists, Monument to a dead
 master of the art
 
@@ -288,15 +288,15 @@ F Idealistic planning node tech, Cynical anti-corruption cop, Precognitive econo
 C The pretech planning computers are breaking
 down, The planning only works because the
 locals have been mentally or physically altered,
-The planning computers can’t handle the increasing population within the system
+The planning computers can't handle the increasing population within the system
 T Planning node computer, Wildly destabilizing
-commodity that can’t be factored into plans, A
+commodity that can't be factored into plans, A
 tremendous store of valuables made by accident
 P Humming factory, Apartment block of perfectly
 equal flats, Mass demonstration of unity
 
 Cyborgs
-The planet’s population makes heavy use of cybernetics, with many of the inhabitants possessing at
+The planet's population makes heavy use of cybernetics, with many of the inhabitants possessing at
 least a cosmetic amount of chrome. This may be the
 result of a strong local cyber tech base, a religious
 injunction, or simply a necessary measure to survive
@@ -321,7 +321,7 @@ things through their augmented-reality cyber
 Cyclical Doom
 The world regularly suffers some apocalyptic catastrophe that wipes out organized civilization on it.
 The local culture is aware of this cycle and has traditions to ensure a fragment of civilization survives
-into the next era, but these traditions don’t always
+into the next era, but these traditions don't always
 work properly, and sometimes dangerous fragments
 of the past emerge.
 E Offworlder seeking to trigger the apocalypse
@@ -329,11 +329,11 @@ early for profit, Local recklessly taking advantage of preparation stores, Demag
 the cycle is merely a myth of the authorities
 F Harried official working to prepare, Offworlder
 studying the cycles, Local threatened by perils of
-the cycle’s initial stages
+the cycle's initial stages
 C The cycles really are a myth of the authorities,
 The cycles are controlled by alien constructs, An
 outside power is interfering with preparation
-T A lost cache of ancient treasures, Tech or archives that will pinpoint the cycle’s timing, Keycodes to bypass an ancient vault’s security
+T A lost cache of ancient treasures, Tech or archives that will pinpoint the cycle's timing, Keycodes to bypass an ancient vault's security
 P Lethally-defended vault of forgotten secrets,
 Starport crowded with panicked refugees, Town
 existing in the shadow of some monstrous monument to a former upheaval
@@ -362,7 +362,7 @@ leader seeking to flee with their treasures, Cynical ship captain selling a one-
 vacuum as escape to another world
 F Appealing waif or family head seeking escape,
 Offworld relief coordinator, Harried law officer
-C The doom is false or won’t actually kill everyone,
+C The doom is false or won't actually kill everyone,
 The doom was intentionally triggered by someone, Mass escape is possible if warring groups
 can somehow be brought to cooperate
 T Clearance for a ship to leave the planet, A cache
@@ -385,8 +385,8 @@ of their former lands
 F One of the few youth among the population,
 Determined and hopeful reformer, Researcher
 seeking a new method of reproduction
-C The dying culture’s values were monstrous, The
-race’s death is somehow necessary to prevent
+C The dying culture's values were monstrous, The
+race's death is somehow necessary to prevent
 some grand catastrophe, The race is somehow
 convinced they deserve this fate
 T Extremely valuable reproductive tech, Treasured artifacts of the former age, Bioweapon
@@ -443,10 +443,10 @@ E Bitter pretender to a meaningless throne, Resentful official dreaming of empir
 offworlder seeking to punish their old rulers
 F Realistic local leader trying to hold things together, Scholar of past glories, Refugee from an
 overthrown colonial enclave
-C The hegemon’s rule was enlightened and fair, It
+C The hegemon's rule was enlightened and fair, It
 collapsed due to its own internal strife rather
 than external resistance, It pretends that nothing
-has happened to its power, It’s been counter-colonized by vengeful outsiders
+has happened to its power, It's been counter-colonized by vengeful outsiders
 T Precious insignia of former rule, Relic tech important to its power, Plundered colonial artifact
 P Palace far too grand for its current occupant,
 Oversized spaceport now in disrepair, Boulevard lined with monuments to past glories
@@ -474,7 +474,7 @@ above the surface of the planet. Perhaps they remain
 stationary, or perhaps they move from point to point
 in search of resources.
 E Rival city pilot, Tech thief attempting to steal
-outworld gear, Saboteur or scavenger plundering the city’s tech
+outworld gear, Saboteur or scavenger plundering the city's tech
 F Maintenance tech in need of help, City defense
 force pilot, Meteorological researcher
 C Sudden storms, Drastic altitude loss, Rival city
@@ -482,7 +482,7 @@ attacks, Vital machinery breaks down
 T Precious refined atmospheric gases, Pretech
 grav engine plans, Meteorological codex predicting future storms
 P Underside of the city, The one calm place on
-the planet’s surface, Catwalks stretching over
+the planet's surface, Catwalks stretching over
 unimaginable gulfs below.
 
 Forbidden Tech
@@ -490,17 +490,17 @@ Some group on this planet fabricates or uses maltech.
 Unbraked AIs doomed to metastasize into insanity,
 nation-destroying nanowarfare particles, slow-burn
 DNA corruptives, genetically engineered slaves, or
-something worse still. The planet’s larger population
+something worse still. The planet's larger population
 may or may not be aware of the danger in their midst.
 E Mad scientist, Maltech buyer from offworld, Security enforcer
 F Victim of maltech, Perimeter agent, Investigative reporter, Conventional arms merchant
 C The maltech is being fabricated by an unbraked
 AI, The government depends on revenue from
 maltech sales to offworlders, Citizens insist that
-it’s not really maltech
+it's not really maltech
 T Maltech research data, The maltech itself, Precious pretech equipment used to create it
 P Horrific laboratory, Hellscape sculpted by the
-maltech’s use, Government building meeting
+maltech's use, Government building meeting
 room
 
 Former Warriors
@@ -526,7 +526,7 @@ left to dust and silence, Monument plaza dedicated to the new culture
 
 Freak Geology
 The geology or geography of this world is simply
-freakish. Perhaps it’s composed entirely of enormous
+freakish. Perhaps it's composed entirely of enormous
 mountain ranges, or regular bands of land and sea, or
 the mineral structures all fragment into perfect cubes.
 The locals have learned to deal with it and their culture will be shaped by its requirements.
@@ -542,7 +542,7 @@ P Atop a bizarre geological formation, Tourist resort catering to offworlders
 Freak Weather
 The planet is plagued with some sort of bizarre or
 hazardous weather pattern. Perhaps city-flattening
-storms regularly scourge the surface, or the world’s
+storms regularly scourge the surface, or the world's
 sun never pierces its thick banks of clouds.
 E Criminal using the weather as a cover, Weather
 cultists convinced the offworlders are responsible for some disaster, Native predators dependent on the weather
@@ -587,9 +587,9 @@ F Claim-jumped miner, Native alien, Curious
 tourist
 C The strike is a hoax, The strike is of a dangerous
 toxic substance, Export of the mineral is prohibited by the planetary government, The native
-aliens live around the strike’s location
+aliens live around the strike's location
 T Cases of the refined element, Pretech mining
-equipment, A dead prospector’s claim deed
+equipment, A dead prospector's claim deed
 P Secret mine, Native alien village, Processing
 plant, Boom town
 
@@ -618,7 +618,7 @@ Local community made only semi-livable by the
 demands of the work
 
 Hatred
-For whatever reason, this world’s populace has a
+For whatever reason, this world's populace has a
 burning hatred for the inhabitants of a neighboring
 system. Perhaps this world was colonized by exiles, or
 there was a recent interstellar war, or ideas of racial
@@ -652,7 +652,7 @@ F Aspiring entrepreneur, Worker union leader,
 Ambitious inventor
 C The factories are toxic, The resources extractable at their tech level are running out, The
 masses require the factory output for survival,
-The industries’ major output is being obsoleted
+The industries' major output is being obsoleted
 by offworld tech
 T Confidential industrial data, Secret union membership lists, Ownership shares in an industrial
 complex
@@ -666,10 +666,10 @@ refinement into loads small enough to export offworld. Major mining efforts are 
 the minerals, and many natives work in the industry.
 E Mine boss, Tunnel saboteur, Subterranean
 predators
-F Hermit prospector, Offworld investor, Miner’s
+F Hermit prospector, Offworld investor, Miner's
 union representative
 C The refinery equipment breaks down, Tunnel
-collapse, Silicate life forms growing in the miners’ lungs
+collapse, Silicate life forms growing in the miners' lungs
 T The mother lode, Smuggled case of refined mineral, Faked crystalline mineral samples
 P Vertical mine face, Tailing piles, Roaring smelting complex
 
@@ -691,7 +691,7 @@ only happens at particular times, The world is
 made of semi-sentient drones and a single AI
 T Vital tech for maintaining the mind, Precious
 treasure held by now-assimilated outsider, Tech
-that “blinds” the hivemind to the tech’s users
+that “blinds” the hivemind to the tech's users
 P Barely tolerable living cells for individuals,
 Workside where individuals casually die in their
 labors, Community with absolutely no social or
@@ -710,7 +710,7 @@ F Desperate peacemaker, Hard-pressed refugee of
 the fighting, Peaceful religious leader who lost
 the internal debate
 C The targets of the war really are doing something diabolically horrible, The holy war is just a
-mask for a very traditional casus belli, The leaders don’t want the war won but only prolonged,
+mask for a very traditional casus belli, The leaders don't want the war won but only prolonged,
 Both this world and the target of the war are
 religion-obsessed
 T Sacred relic of the faith, A captured blasphemer
@@ -757,14 +757,14 @@ or have found some local anagathic, or be cyborg life
 forms, or be so totally convinced of reincarnation
 that death is a cultural irrelevance. Any immortality
 technique is likely applicable only to them, or else
-it’s apt to be a massive draw to outside imperialists.
+it's apt to be a massive draw to outside imperialists.
 E Outsider determined to steal immortality, Smug
 local convinced of their immortal wisdom to
-rule all, Offworlder seeking the world’s ruin
+rule all, Offworlder seeking the world's ruin
 before it becomes a threat to all
 F Curious longevity researcher, Thrill-seeking
 local,
-C Immortality requires doing something that outsiders can’t or won’t willingly do, The immortality ends if they leave the world, Death is the
+C Immortality requires doing something that outsiders can't or won't willingly do, The immortality ends if they leave the world, Death is the
 punishment for even minor crimes, Immortals
 must die or go offworld after a certain span, Immortality has brutal side-effects
 T Immortality drug, Masterwork of an ageless artisan, Toxin that only affects immortals
@@ -785,7 +785,7 @@ F Spy searching for the source, Artisan seeking
 protection, Exporter with problems
 C The specialty is repugnant in nature, The crafters refuse to sell to offworlders, The specialty is
 made in a remote, dangerous place, The crafters
-don’t want to make the specialty any more
+don't want to make the specialty any more
 T The specialty itself, The secret recipe, Sample of
 a new improved variety
 P Secret manufactory, Hidden cache, Artistic competition for best artisan
@@ -860,7 +860,7 @@ from Mandate records
 C The monitoring system forces the locals to behave in aggressive ways toward “rebel” worlds,
 The monitoring system severely hinders offworld use of their tech, The original colonists
 are all dead and have been replaced by outsiders
-who don’t understand all the details
+who don't understand all the details
 T Ultra-advanced pretech, Mandate military gear,
 Databank containing precious tech schematics
 P Faded Mandate offices still in use, Vault containing ancient pretech, Carefully-maintained
@@ -926,7 +926,7 @@ locals and a hungry imperial power, The mercenaries are remnants of a former off
 The mercenaries hardly ever actually fight as
 compared to taking bribes to walk away
 T Lost mercenary payroll shipment, Forbidden
-military tech, Proof of a band’s impending
+military tech, Proof of a band's impending
 treachery against their employers
 P Shabby camp of undisciplined mercs, Burnt-out
 village occupied by mercenaries, Luxurious and
@@ -958,7 +958,7 @@ Night World
 The world is plunged into eternal darkness. The
 only life on this planet derives its energy from other
 sources, such as geothermal heat, extremely volatile
-chemical reactions in the planet’s soil, or light in a
+chemical reactions in the planet's soil, or light in a
 non-visible spectrum. Most flora and fauna is voraciously eager to consume other life.
 E Monstrous thing from the night, Offworlder
 finding the obscurity of the world convenient
@@ -986,12 +986,12 @@ a secret from their populations, or they may simply
 consider offworlders too dangerous or repugnant to
 be allowed among the population.
 E Customs official, Xenophobic natives, Existing
-merchant who doesn’t like competition
+merchant who doesn't like competition
 F Aspiring tourist, Anthropological researcher,
 Offworld thief, Religious missionary
 C The locals carry a disease harmless to them and
 lethal to outsiders, The locals hide dark purposes from offworlders, The locals have something
-desperately needed but won’t bring it into the
+desperately needed but won't bring it into the
 treaty port
 T Contraband trade goods, Security perimeter
 codes, Black market local products
@@ -1100,7 +1100,7 @@ F Agent in need of help, Support staffer, “Unjustly”
 targeted researcher
 C The local Agency has gone rogue and now uses
 maltech, The Agency archives have been compromised, The Agency has been targeted by a
-maltech-using organization, The Agency’s existence is unknown to the locals
+maltech-using organization, The Agency's existence is unknown to the locals
 T Agency maltech research archives, Agency pretech spec-ops gear, File of blackmail on local
 politicians
 P Interrogation room, Smoky bar, Maltech laboratory, Secret Agency base
@@ -1116,13 +1116,13 @@ places may forbid the entrance of those not suitably
 pious or devout.
 E Saboteur devoted to a rival belief, Bitter reformer who resents the current leadership, Swindler
 conning the pilgrims
-F Protector of the holy site, Naive offworlder pilgrim, Outsider wanting to learn the sanctum’s
+F Protector of the holy site, Naive offworlder pilgrim, Outsider wanting to learn the sanctum's
 inner secrets
 C The site is actually a fake, The site is run by
 corrupt and venal keepers, A natural disaster
 threatens the site
 T Ancient relic guarded at the site, Proof of the
-site’s inauthenticity, Precious offering from a
+site's inauthenticity, Precious offering from a
 pilgrim
 P Incense-scented sanctum, Teeming crowd of
 pilgrims, Imposing holy structure
@@ -1137,7 +1137,7 @@ and the prices they demand can be in credits or in less
 tangible recompense.
 E Purveyor of evil delights, Local seeking to control others with addictions, Offworlder exploiter
 of native resources
-F Tourist who’s in too deep, Native seeking a more
+F Tourist who's in too deep, Native seeking a more
 meaningful life elsewhere, Offworld entertainer
 looking for training here
 C A deeply repugnant pleasure is offered here by a
@@ -1152,7 +1152,7 @@ P Breathtaking natural feature, Artful but decadent salon, Grimy den of desperat
 
 Police State
 The world is a totalitarian police state. Any sign of
-disloyalty to the planet’s rulers is punished severely,
+disloyalty to the planet's rulers is punished severely,
 and suspicion riddles society. Some worlds might operate by Soviet-style informers and indoctrination,
 while more technically sophisticated worlds might
 rely on omnipresent cameras or braked AI “guardian
@@ -1163,9 +1163,9 @@ Treacherous native informer
 F Rebel leader, Offworld agitator, Imprisoned victim, Crime boss
 C The natives largely believe in the righteousness
 of the state, The police state is automated and
-its “rulers” can’t shut it off, The leaders foment
+its “rulers” can't shut it off, The leaders foment
 a pogrom against “offworlder spies”.
-T List of police informers, Wealth taken from “enemies of the state”, Dear Leader’s private stash
+T List of police informers, Wealth taken from “enemies of the state”, Dear Leader's private stash
 P Military parade, Gulag, Gray concrete housing
 block, Surveillance center
 
@@ -1226,10 +1226,10 @@ E Cult leader, Artifact supplier, Pretech smuggler
 F Offworld scientist, Robbed collector, Cult heretic
 C The cultists can actually replicate certain forms
 of pretech, The cultists abhor use of the devices
-as “presumption on the holy”, The cultists mistake the party’s belongings for pretech
+as “presumption on the holy”, The cultists mistake the party's belongings for pretech
 T Pretech artifacts both functional and broken,
 Religious-jargon laced pretech replication techniques, Waylaid payment for pretech artifacts
-P Shrine to nonfunctional pretech, Smuggler’s den,
+P Shrine to nonfunctional pretech, Smuggler's den,
 Public procession showing a prized artifact
 
 Primitive Aliens
@@ -1256,7 +1256,7 @@ Terran Mandate, while others were to contain entire “dangerous” ethnic group
 may still have warden AIs or automatic systems to
 prevent any unauthorized person from leaving, and
 any authorization permits have long since expired.
-E Crazed warden AI, Brutal heir to gang leadership, Offworlder who’s somehow acquired warden powers and exploits the locals
+E Crazed warden AI, Brutal heir to gang leadership, Offworlder who's somehow acquired warden powers and exploits the locals
 F Innocent local born here, Native technician
 forced to maintain the very tech that imprisons
 them, Offworlder trapped here by accident
@@ -1333,7 +1333,7 @@ mind, Sanitarium-prison for feral psychics
 Quarantined World
 The world is under a quarantine, and space travel
 to and from it is strictly forbidden. This may be enforced by massive ground batteries that burn any
-interlopers from the planet’s sky, or it may be that a
+interlopers from the planet's sky, or it may be that a
 neighboring world runs a persistent blockade.
 E Defense installation commander, Suspicious patrol leader, Crazed asteroid hermit
 F Relative of a person trapped on the world, Humanitarian relief official, Treasure hunter
@@ -1354,7 +1354,7 @@ protection of advanced medical treatments.
 E Bitter mutant, Relic warlord, Desperate wouldbe escapee
 F Reckless prospector, Offworld scavenger, Biogenetic variety seeker
 C The radioactivity is steadily growing worse, The
-planet’s medical resources break down, The
+planet's medical resources break down, The
 radioactivity has inexplicable effects on living
 creatures, The radioactivity is the product of a
 malfunctioning pretech manufactory.
@@ -1389,7 +1389,7 @@ to avoid its anger. It may even be the capital of a small
 stellar empire.
 E Ambitious general, Colonial official, Contemptuous noble
 F Diplomat, Offworld ambassador, Foreign spy
-C The hegemon’s influence is all that’s keeping a
+C The hegemon's influence is all that's keeping a
 murderous war from breaking out on nearby
 worlds, The hegemon is decaying and losing its
 control, The government is riddled with spies,
@@ -1418,7 +1418,7 @@ P Courtroom, Mob scene of outraged locals, Legislative chamber, Police station
 Revanchists
 The locals formerly owned another world, or a major nation on the planet formerly owned an additional region of land. Something happened to take
 away this control or drive out the former rulers, and
-they’ve never forgotten it. The locals are obsessed
+they've never forgotten it. The locals are obsessed
 with reclaiming their lost lands, and will allow no
 questions of practicality to interfere with their cause.
 E Demagogue whipping the locals on to a hopeless war, Politician seeking to use the resentment
@@ -1428,7 +1428,7 @@ the land bitterly demanding it be reclaimed
 F Realist local clergy seeking peace, Politician
 trying to calm the public, Third-party diplomat
 trying to stamp out the fire
-C The revanchists’ claim is completely just and reasonable, The land is now occupied entirely by
+C The revanchists' claim is completely just and reasonable, The land is now occupied entirely by
 heirs of the conquerors, Both sides have seized
 lands the other thinks are theirs
 T Stock of vital resource produced by the taken
@@ -1474,16 +1474,16 @@ P Time-worn palace, Low-caste slums, Bandit den,
 Reformist temple
 
 Rising Hegemon
-This world is not yet a dominant power in the sector, but it’s well on its way there. Whether through
+This world is not yet a dominant power in the sector, but it's well on its way there. Whether through
 newly-blossoming economic, military, or cultural
-power, they’re extending their influence over their
+power, they're extending their influence over their
 neighbors and forging new arrangements between
 their government and the rulers of nearby worlds.
 E Jingoistic supremacist, Official bent on glorious
 success, Foreign agent saboteur
 F Friendly emissary to the benighted, Hardscrabble local turned great success, Foreign visitor
 seeking contacts or knowledge
-C They’re only strong because their neighbors
+C They're only strong because their neighbors
 have been weakened, Their success is based on
 a fluke resource or pretech find, They bitterly
 resent their neighbors as former oppressors
@@ -1496,7 +1496,7 @@ Ritual Combat
 The locals favor some form of stylized combat to
 resolve disputes, provide entertainment, or settle
 religious differences. This combat is probably not
-normally lethal unless it’s reserved for a specific disposable class of slaves or professionals. Some combat
+normally lethal unless it's reserved for a specific disposable class of slaves or professionals. Some combat
 may involve mastery of esoteric weapons and complex arenas, while other forms might require nothing
 more than a declaration in the street and a drawn gun.
 E Bloodthirsty local champion, Ambitious gladiator stable owner, Xenophobic master fighter
@@ -1504,7 +1504,7 @@ F Peace-minded foreign missionary, Temperate
 defender of the weak, Local eager to learn of
 offworld fighting styles
 C The required weapons are strange pretech artifacts, Certain classes are forbidden from fighting
-and require champions, Loss doesn’t mean death
+and require champions, Loss doesn't mean death
 but it does mean ritual scarring or property loss
 T Magnificent weapon, Secret book of martial
 techniques, Token signifying immunity to ritual
@@ -1520,7 +1520,7 @@ developed VIs to a degree that individual bots can
 seem (or be) sentient. Some worlds might even be
 ruled by metal overlords, ones which do not need to
 be sentient so long as they have overwhelming force.
-E Hostile robot master, Robot greedy to seize offworld tech, Robot fallen in love with the PC’s
+E Hostile robot master, Robot greedy to seize offworld tech, Robot fallen in love with the PC's
 ship, Oligarch whose factories build robots
 F Data-seeking robot, Plucky young robot tech,
 Local being pushed out of a job by robots
@@ -1528,7 +1528,7 @@ C The robots are only partially controlled, The
 robots are salvaged and originally meant for
 a much darker use, The robots require a rare
 material that the locals fight over, The robots
-require the planet’s specific infrastructure so
+require the planet's specific infrastructure so
 cannot be exported
 T Prototype robot, Secret robot override codes,
 Vast cache of robot-made goods, Robot-destroying pretech weapon
@@ -1548,7 +1548,7 @@ F City navigator, Scout captain, Curious mer-human, Hard-pressed ship-city engin
 C The seas are not water, The fish schools have
 vanished and the city faces starvation, Terrible
 storms drive the city into the glacial regions,
-Suicide ships ram the city’s hull
+Suicide ships ram the city's hull
 T Giant pearls with mysterious chemical properties, Buried treasure, Vital repair materials
 P Bridge of the city, Storm-tossed sea, A bridge
 fashioned of many small boats.
@@ -1567,8 +1567,8 @@ Misguided fool who thinks he can use it, Reckless researcher who thinks he can f
 F Keeper of the menace, Student of its nature, Victim of the menace
 C The menace would bring great wealth along
 with destruction, The menace is intelligent, The
-natives don’t all believe in the menace
-T A key to unlock the menace, A precious byproduct of the menace, The secret of the menace’s
+natives don't all believe in the menace
+T A key to unlock the menace, A precious byproduct of the menace, The secret of the menace's
 true nature
 P Guarded fortress containing the menace, Monitoring station, Scene of a prior outbreak of the
 menace
@@ -1577,8 +1577,8 @@ Secret Masters
 The world is actually run by a hidden cabal, acting
 through their catspaws in the visible government.
 For one reason or another, this group finds it imperative that they not be identified by outsiders, and
-in some cases even the planet’s own government may
-not realize that they’re actually being manipulated by
+in some cases even the planet's own government may
+not realize that they're actually being manipulated by
 hidden masters.
 E An agent of the cabal, Government official who
 wants no questions asked, Willfully blinded local
@@ -1610,7 +1610,7 @@ world is imperiled, The sectarians hate outsiders
 more than they hate each other, The differences
 in sects are incomprehensible to an outsider
 T Ancient holy book, Incontrovertible proof, Offering to a local holy man
-P Sectarian battlefield, Crusading temple, Philosopher’s salon, Bitterly divided village
+P Sectarian battlefield, Crusading temple, Philosopher's salon, Bitterly divided village
 
 Seismic Instability
 The local land masses are remarkably unstable, and
@@ -1622,8 +1622,8 @@ E Earthquake cultist, Hermit seismologist, Burrowing native life form, Earthquak
 saboteur
 F Experimental construction firm owner, Adventurous volcanologist, Geothermal prospector
 C The earthquakes are caused by malfunctioning
-pretech terraformers, They’re caused by alien
-technology, They’re restrained by alien technology that is being plundered by offworlders,
+pretech terraformers, They're caused by alien
+technology, They're restrained by alien technology that is being plundered by offworlders,
 The earthquakes are used to generate enormous
 amounts of energy.
 T Earthquake generator, Earthquake suppressor,
@@ -1658,7 +1658,7 @@ workaround tech, Temple to the power or entity
 that imposed the shackle
 
 Societal Despair
-The world’s dominant society has lost faith in itself.
+The world's dominant society has lost faith in itself.
 Whether through some all-consuming war, great
 catastrophe, overwhelming outside culture, or religious collapse, the natives no longer believe in their
 old values, and search desperately for something new.
@@ -1681,13 +1681,13 @@ Smoky hall full of frantic speakers
 
 Sole Supplier
 Some extremely important resource is exported from
-this world and this world alone. It’s unlikely that the
+this world and this world alone. It's unlikely that the
 substance is critical for building spike drives unless
 this world is also the first to begin interstellar flight,
 but it may be critical to other high-tech processes or
 devices. The locals make a large amount of money off
 this trade and control of it is of critical importance to
-the planet’s rulers, and potentially to outside powers.
+the planet's rulers, and potentially to outside powers.
 E Resource oligarch, Ruthless smuggler, Resource-controlling warlord, Foreign agent seeking to subvert local government
 F Doughty resource miner, Researcher trying to
 synthesize the stuff, Small-scale resource producer, Harried starport trade overseer
@@ -1727,7 +1727,7 @@ Terraform Failure
 This world was marginal for human habitation when
 it was discovered, but the Mandate or the early government put in pretech terraforming engines to correct its more extreme qualities. The terraforming did
 not entirely work, either failing of its own or suffering the destruction of the engines during the Silence.
-The natives are only partly adapted to the world’s
+The natives are only partly adapted to the world's
 current state, and struggle with the environment.
 E Brutal ruler who cares only for their people,
 Offworlder trying to loot the damaged engines,
@@ -1755,7 +1755,7 @@ F Heretic, Offworld theologian, Atheistic merchant, Desperate commoner
 C The theocracy actually works well, The theocracy is decadent and hated by the common folk,
 The theocracy is divided into mutually hostile
 sects, The theocracy is led by aliens
-T Precious holy text, Martyr’s bones, Secret church
+T Precious holy text, Martyr's bones, Secret church
 records, Ancient church treasures
 P Glorious temple, Austere monastery, Academy
 for ideological indoctrination, Decadent pleasure-cathedral
@@ -1776,13 +1776,13 @@ scavenger, Automated defense system, Native
 predator
 F Scavenger Fleet captain, Archaeologist, Salvaging historian, Xenophilic native survivor
 C The ruins are full of booby-traps left by the final
-inhabitants, The world’s atmosphere quickly degrades anything in an opened building, A handful of desperate natives survived the Silence, The
+inhabitants, The world's atmosphere quickly degrades anything in an opened building, A handful of desperate natives survived the Silence, The
 structures are unstable and collapsing
 T Lost pretech equipment, Tech caches, Stores of
 unused munitions, Ancient historical data
 P Crumbling hive-city, City square carpeted in
 bones, Ruined hydroponic facility, Cannibal
-tribe’s lair, Dead orbital jump gate
+tribe's lair, Dead orbital jump gate
 
 Trade Hub
 This world is a major crossroads for local interstellar
@@ -1797,9 +1797,9 @@ F Rich tourist, Hardscrabble free trader, Merchant
 prince in need of catspaws, Friendly spaceport
 urchin
 C An outworlder faction schemes to seize the trade
-hub, Saboteurs seek to blow up a rival’s warehouses, Enemies are blockading the trade routes,
+hub, Saboteurs seek to blow up a rival's warehouses, Enemies are blockading the trade routes,
 Pirates lace the hub with spies
-T Voucher for a warehouse’s contents, Insider
+T Voucher for a warehouse's contents, Insider
 trading information, Case of precious offworld
 pharmaceuticals, Box of legitimate tax stamps
 indicating customs dues have been paid.
@@ -1835,9 +1835,9 @@ and reason with a speed impossible for humans, and
 can demonstrate a truly distressing subtlety.
 E AI Cultist, Maltech researcher, Government official dependent on the AI
 F Perimeter agent, AI researcher, Braked AI
-C The AI’s presence is unknown to the locals, The
+C The AI's presence is unknown to the locals, The
 locals depend on the AI for some vital service,
-The AI appears to be harmless, The AI has fixated on the group’s ship’s computer, The AI wants
+The AI appears to be harmless, The AI has fixated on the group's ship's computer, The AI wants
 transport offworld
 T The room-sized AI core itself, Maltech research
 files, Perfectly tabulated blackmail on government officials, Pretech computer circuitry
@@ -1845,7 +1845,7 @@ P Municipal computing banks, Cult compound,
 Repair center, Ancient hardcopy library
 
 Urbanized Surface
-The world’s land area is covered with buildings that
+The world's land area is covered with buildings that
 extend downward for multiple levels. Such worlds
 either have a population in the trillions, extremely
 little land area, or are largely-abandoned due to some
@@ -1885,7 +1885,7 @@ to find a way to reverse the utopian changes
 C The natives really are deeply and contentedly
 happy with their altered lot, The utopia produces something that attracts others, The utopia
 works on converting outsiders through persuasion and generosity, The utopia involves some
-sacrifice that’s horrifying to non-members
+sacrifice that's horrifying to non-members
 T Portable device that applies the utopian change,
 Plans for a device that would destroy the utopia,
 Goods created joyfully by the locals
@@ -1906,7 +1906,7 @@ mutual threats, The warlords favor specific religions or races over others, The 
 using substantially more sophisticated tech than
 others, Some of the warlords are better rulers
 than the government
-T Weapons cache, Buried plunder, A warlord’s
+T Weapons cache, Buried plunder, A warlord's
 personal battle harness, Captured merchant
 shipping
 P Gory battlefield, Burnt-out village, Barbaric
@@ -1961,6 +1961,6 @@ C The zombies retain human intelligence, The
 zombies can be cured, The process is voluntary
 among devotees, The condition is infectious
 T Cure for the condition, Alien artifact that causes
-it, Details of the cult’s conversion process
+it, Details of the cult's conversion process
 P House with boarded-up windows, Dead city,
 Fortified bunker that was overrun from within
