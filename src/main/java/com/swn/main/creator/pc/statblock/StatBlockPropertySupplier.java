@@ -21,7 +21,7 @@ public abstract class StatBlockPropertySupplier extends PropertySupplierImpl {
 
     @Override
     protected String getFilePackage() {
-        return "src/main/resources/creator/pc";
+        return "src/main/resources/creator/pc/statblock";
     }
 
     @Override
