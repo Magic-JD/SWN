@@ -3,6 +3,7 @@ package com.swn.main.property;
 import com.swn.main.property.supplier.PropertySupplierImpl;
 import com.swn.main.resourceextractor.ResourceExtractor;
 import jakarta.annotation.PostConstruct;
+import org.springframework.util.StringUtils;
 
 import java.util.Collections;
 import java.util.List;
@@ -33,7 +34,7 @@ public class PropertySupplierPropertyImpl extends PropertySupplierImpl implement
 
     @Override
     public String getPropertyDetails() {
-        return getString(getRoll());
+        return getName() + ", " + getString(getRoll());
     }
 
     @Override
@@ -54,5 +55,12 @@ public class PropertySupplierPropertyImpl extends PropertySupplierImpl implement
     @Override
     protected int getDiceNumber() {
         return 1;
+    }
+
+    @Override
+    protected String getName() {
+        String[] split = propertyLink.split("/");
+        String name = split[split.length-1];
+        return StringUtils.capitalize(name.split("\\.")[0]);
     }
 }
