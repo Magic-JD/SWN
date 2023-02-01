@@ -1,6 +1,6 @@
 Teeth or mandibles
 Claws
 Poison
-Harmful discharge
+PSP | /discharge.txt
 Pincers
 Horns
