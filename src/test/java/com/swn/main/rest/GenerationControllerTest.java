@@ -1,14 +1,14 @@
 package com.swn.main.rest;
 
-import com.swn.main.creator.beast.BeastPropertySupplier;
-import com.swn.main.creator.encounter.urban.UrbanEncounterPropertySupplier;
-import com.swn.main.creator.encounter.wilderness.WildernessEncounterPropertySupplier;
-import com.swn.main.creator.npc.patron.PatronNpcPropertySupplier;
-import com.swn.main.creator.npc.NpcPropertySupplier;
-import com.swn.main.creator.npc.standard.StandardNpcPropertySupplier;
-import com.swn.main.creator.npc.universal.UniversalNpcPropertySupplier;
-import com.swn.main.creator.problem.ProblemPropertySupplier;
-import com.swn.main.creator.world.WorldPropertySupplier;
+import com.swn.main.generator.beast.BeastPropertySupplier;
+import com.swn.main.generator.encounter.urban.UrbanEncounterPropertySupplier;
+import com.swn.main.generator.encounter.wilderness.WildernessEncounterPropertySupplier;
+import com.swn.main.generator.npc.patron.PatronNpcPropertySupplier;
+import com.swn.main.generator.npc.NpcPropertySupplier;
+import com.swn.main.generator.npc.standard.StandardNpcPropertySupplier;
+import com.swn.main.generator.npc.universal.UniversalNpcPropertySupplier;
+import com.swn.main.generator.problem.ProblemPropertySupplier;
+import com.swn.main.generator.world.WorldPropertySupplier;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

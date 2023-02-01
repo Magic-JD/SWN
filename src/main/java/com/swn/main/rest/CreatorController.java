@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/create")
 public class CreatorController {
 
+
+
     @GetMapping("/pc/stat-block")
     @ResponseBody
     public ResponseEntity<String> generatePcAttributes() {
