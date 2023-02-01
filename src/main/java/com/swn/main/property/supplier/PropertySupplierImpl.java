@@ -63,7 +63,7 @@ public abstract class PropertySupplierImpl implements PropertySupplier {
         return getClass().getSimpleName();
     }
 
-    private String getFile() {
+    protected String getFile() {
         return getFilePackage() + "/" + getName().toLowerCase() + ".txt";
     }
 }
