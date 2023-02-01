@@ -3,6 +3,7 @@ package com.swn.main.rest;
 import com.swn.main.creator.beast.BeastCreator;
 import com.swn.main.creator.encounter.EncounterCreator;
 import com.swn.main.creator.npc.NpcCreator;
+import com.swn.main.creator.problem.ProblemCreator;
 import com.swn.main.creator.world.WorldCreator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -19,6 +20,7 @@ public class GenerationController {
     @Autowired NpcCreator npc;
     @Autowired EncounterCreator encounter;
     @Autowired BeastCreator beast;
+    @Autowired ProblemCreator problem;
 
     @GetMapping("/world")
     @ResponseBody
@@ -54,5 +56,11 @@ public class GenerationController {
     @ResponseBody
     public ResponseEntity<String> generateBeast() {
         return ResponseEntity.ok(beast.createBeast());
+    }
+
+    @GetMapping("/problem")
+    @ResponseBody
+    public ResponseEntity<String> generateProblem() {
+        return ResponseEntity.ok(problem.displayProperties());
     }
 }

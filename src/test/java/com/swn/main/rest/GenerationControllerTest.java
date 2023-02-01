@@ -7,6 +7,7 @@ import com.swn.main.creator.npc.patron.PatronNpcPropertySupplier;
 import com.swn.main.creator.npc.NpcPropertySupplier;
 import com.swn.main.creator.npc.standard.StandardNpcPropertySupplier;
 import com.swn.main.creator.npc.universal.UniversalNpcPropertySupplier;
+import com.swn.main.creator.problem.ProblemPropertySupplier;
 import com.swn.main.creator.world.WorldPropertySupplier;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,7 @@ class GenerationControllerTest {
     @Autowired List<WildernessEncounterPropertySupplier> wildernessEncounterProperties;
     @Autowired List<BeastPropertySupplier> beastProperties;
     @Autowired List<UniversalNpcPropertySupplier> universalNpcProperties;
+    @Autowired List<ProblemPropertySupplier> problemProperties;
 
     @Test
     public void shouldGenerateWorldWithAllProperties(){
@@ -107,6 +109,19 @@ class GenerationControllerTest {
         assertNotNull(response.getBody());
         assertFalse(beastProperties.isEmpty());
         for(BeastPropertySupplier creator : beastProperties){
+            String simpleName = creator.getClass().getSimpleName();
+            System.out.println("Testing: " + simpleName);
+            assertTrue(response.getBody().contains(simpleName), "Does not contain property " + simpleName);
+        }
+    }
+
+    @Test
+    public void shouldGenerateProblemWithAllProperties(){
+        ResponseEntity<String> response = controller.generateProblem();
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertNotNull(response.getBody());
+        assertFalse(problemProperties.isEmpty());
+        for(ProblemPropertySupplier creator : problemProperties){
             String simpleName = creator.getClass().getSimpleName();
             System.out.println("Testing: " + simpleName);
             assertTrue(response.getBody().contains(simpleName), "Does not contain property " + simpleName);
