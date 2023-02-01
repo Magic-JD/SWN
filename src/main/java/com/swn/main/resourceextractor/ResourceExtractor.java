@@ -1,5 +1,6 @@
 package com.swn.main.resourceextractor;
 
+import com.swn.main.dice.Dice;
 import com.swn.main.property.*;
 import org.springframework.stereotype.Component;
 
@@ -9,6 +10,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 @Component
@@ -71,14 +74,15 @@ public class ResourceExtractor {
 
     private Property fromString(int startNumber, int endNumber, String descriptionString) {
         String[] split = descriptionString.split(";");
+        String description = split[0];
         if (split.length == 1) {
-            return new PropertyImpl(split[0], startNumber, endNumber);
+            return new PropertyImpl(description, startNumber, endNumber);
         } else {
             String dice = split[1].trim();
             String[] values = dice.split("d");
             int repeating = Integer.parseInt(values[0]);
             int rollMax = Integer.parseInt(values[1]);
-            return new RepeatingProperty(repeating, rollMax, split[0], startNumber, endNumber);
+            return new RepeatingProperty(repeating, rollMax, description, startNumber, endNumber);
         }
     }
 }

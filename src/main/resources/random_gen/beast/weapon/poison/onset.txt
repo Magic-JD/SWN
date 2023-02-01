@@ -1,0 +1,6 @@
+Onset - Instant
+Onset - 1 round
+Onset - 1d6 rounds
+Onset - 1 minute
+Onset - 1d6 minutes
+Onset - 1 hour

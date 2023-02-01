@@ -1,0 +1,6 @@
+Duration - 1d6 rounds
+Duration - 1 minute
+Duration - 10 minutes
+Duration - 1 hour
+Duration - 1d6 hours
+Duration - 1d6 days

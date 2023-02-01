@@ -1,0 +1,6 @@
+Death
+Paralysis
+1d4 dmg per onset interval
+Convulsions
+Blindness
+Hallucinations
