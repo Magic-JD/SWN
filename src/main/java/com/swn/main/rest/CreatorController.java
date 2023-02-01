@@ -28,4 +28,10 @@ public class CreatorController {
         return ResponseEntity.ok(origin.displayProperties());
     }
 
+    @GetMapping("/pc/tooltip/origin")
+    @ResponseBody
+    public ResponseEntity<String> generateOriginTooltip() {
+        return ResponseEntity.ok("origin.displayProperties()");
+    }
+
 }
