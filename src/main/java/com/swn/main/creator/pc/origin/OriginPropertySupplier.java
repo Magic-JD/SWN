@@ -1,4 +1,4 @@
-package com.swn.main.creator.pc.background;
+package com.swn.main.creator.pc.origin;
 
 import com.swn.main.property.supplier.PropertySupplierImpl;
 import org.springframework.stereotype.Component;

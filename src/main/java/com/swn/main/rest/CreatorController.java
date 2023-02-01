@@ -1,13 +1,11 @@
 package com.swn.main.rest;
 
-import com.swn.main.creator.pc.background.OriginCreator;
+import com.swn.main.creator.pc.origin.OriginCreator;
+import com.swn.main.creator.pc.origin.OriginDisplayProperties;
 import com.swn.main.creator.pc.statblock.StatBlockCreator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/create")
@@ -25,13 +23,13 @@ public class CreatorController {
     @GetMapping("/pc/origin")
     @ResponseBody
     public ResponseEntity<String> generatePcOrigin() {
-        return ResponseEntity.ok(origin.displayProperties());
+        return ResponseEntity.ok(origin.createOrigin());
     }
 
-    @GetMapping("/pc/tooltip/origin")
+    @GetMapping("/pc/tooltip/origin/{origin}")
     @ResponseBody
-    public ResponseEntity<String> generateOriginTooltip() {
-        return ResponseEntity.ok("origin.displayProperties()");
+    public ResponseEntity<String> generateOriginTooltip(@PathVariable String origin) {
+        return ResponseEntity.ok(this.origin.originTooltip(origin));
     }
 
 }

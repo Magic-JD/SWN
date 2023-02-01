@@ -1,0 +1,28 @@
+Barbarian
+Standards of barbarism vary when many worlds are capable of interstellar spaceflight, but your hero comes from a savage world of low technology and high violence. Their planet may have survived an all-consuming war, or been deprived of critical materials or energy resources, or simply have been colonized by confirmed Luddites. Other barbarians might be drawn from the impoverished underclass of advanced worlds or the technologically-degenerate inheritors of some high-tech space station or planetary hub.
+
+Free Skill
+Survive-0
+
+Quick Skills
+Survive-0
+Notice-0
+Any Combat-0
+
+d6 Growth
+1 +1 Any Stat
+2 +2 Physical
+3 +2 Physical
+4 +2 Mental
+5 Exert
+6 Any Skill
+
+d8 Learning
+1 Any Combat
+2 Connect
+3 Exert
+4 Lead
+5 Notice
+6 Punch
+7 Sneak
+8 Survive
