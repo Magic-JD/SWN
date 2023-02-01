@@ -1,0 +1,8 @@
+PSP | /money.txt
+PSP | /revenge.txt
+PSP | /power.txt
+PSP | /natural.txt
+PSP | /religion.txt
+PSP | /ideology.txt
+PSP | /ethnicity.txt
+PSP | /resources.txt
