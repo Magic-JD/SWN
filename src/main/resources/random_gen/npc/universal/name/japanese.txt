@@ -1,1 +1,1 @@
-DPP | /first.txt, /last.txt
+DPP | first.txt, last.txt

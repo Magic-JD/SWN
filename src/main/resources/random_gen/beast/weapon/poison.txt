@@ -1,1 +1,1 @@
-DPP | /type.txt, /onset.txt, /duration.txt
+DPP | type.txt, onset.txt, duration.txt

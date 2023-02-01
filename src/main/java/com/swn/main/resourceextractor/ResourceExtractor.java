@@ -42,7 +42,7 @@ public class ResourceExtractor {
 
     private Property dpp(int count, String line, String resourceName) {
         String[] split = line.split("\\|");
-        String filePath = resourceName.replace(".txt", "");
+        String filePath = resourceName.replace(".txt", "/");
         List<String> filePathExtension = Arrays.stream(split[1].trim().split(","))
                 .map(String::trim)
                 .map(s -> filePath + s)
@@ -52,7 +52,7 @@ public class ResourceExtractor {
 
     private Property psp(int count, String line, String resourceName) {
         String[] split = line.split("\\|");
-        String filePath = resourceName.replace(".txt", "");
+        String filePath = resourceName.replace(".txt", "/");
         String filePathExtension = split[1].trim();
         return new PropertySupplierPropertyImpl(count, count, filePath + filePathExtension, this);
     }

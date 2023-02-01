@@ -1,6 +1,6 @@
 Teeth or mandibles
 Claws
-PSP | /poison.txt
-PSP | /discharge.txt
+PSP | poison.txt
+PSP | discharge.txt
 Pincers
 Horns

@@ -1,1 +1,1 @@
-DPP | /situation.txt, /focus.txt
+DPP | situation.txt, focus.txt
