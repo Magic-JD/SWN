@@ -1,7 +1,7 @@
 package com.swn.main.creator.pc.statblock;
 
 import com.swn.main.dice.Dice;
-import com.swn.main.property.supplier.PropertySupplier;
+import com.swn.main.property.PropertyInfo;
 import com.swn.main.property.supplier.PropertySupplierImpl;
 import org.springframework.stereotype.Component;
 
@@ -10,8 +10,19 @@ public abstract class StatBlockPropertySupplier extends PropertySupplierImpl {
 
     @Override
     public String getPropertyString(){
-        int roll = Dice.rollXDN(3, 6);
+        int roll = getRoll();
         return getName() + ": " + roll + " " + getString(roll);
+    }
+
+    @Override
+    public int getRoll(){
+        return Dice.rollXDN(getDiceNumber(), 6);
+    }
+
+    @Override
+    public PropertyInfo getPropertyInfo(){
+        int roll = getRoll();
+        return new PropertyInfo(getName(), roll + " " + getString(roll));
     }
 
     @Override
