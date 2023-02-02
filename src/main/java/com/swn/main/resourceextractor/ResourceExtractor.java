@@ -17,6 +17,19 @@ import java.util.stream.Collectors;
 @Component
 public class ResourceExtractor {
 
+    public String fullResource(String resourceName){
+        StringBuilder stringBuilder = new StringBuilder();
+        try (Scanner scanner = new Scanner(new File(resourceName))) {
+            while (scanner.hasNext()) {
+                stringBuilder.append(scanner.nextLine());
+                stringBuilder.append("\n");
+            }
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        return stringBuilder.toString();
+    }
+
     public List<Property> resourceMapping(String resourceName) {
         List<Property> properties = new ArrayList<>();
         int count = 1;
