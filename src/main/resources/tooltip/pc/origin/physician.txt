@@ -1,5 +1,5 @@
 Physician
-Bodies wear and break, even on worlds that possess the full resources of advanced postech medicine. Your hero was a physician, one trained to cure the maladies of the body or the afflictions of the mind. Some physicians are conventional health workers, while others are ship’s surgeons, military medics, missionary healers of an expanding faith, or dubious slum doctors who’ll graft over laser burns with no awkward questions asked. Wherever men and women go into danger, however, the skills of a physician are eagerly sought.
+Bodies wear and break, even on worlds that possess the full resources of advanced postech medicine. Your hero was a physician, one trained to cure the maladies of the body or the afflictions of the mind. Some physicians are conventional health workers, while others are ship's surgeons, military medics, missionary healers of an expanding faith, or dubious slum doctors who'll graft over laser burns with no awkward questions asked. Wherever men and women go into danger, however, the skills of a physician are eagerly sought.
 
 Free Skill
 Heal-0
