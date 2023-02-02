@@ -1,0 +1,28 @@
+Dilettante
+Your hero never had a profession, strictly speaking, but spent their formative years in travel, socializing, and a series of engaging hobbies. They might have been the scion of a wealthy industrialist, a planetary noble’s younger offspring, or a hanger-on to someone with the money and influence they lacked. By the time your hero’s adventures start, they’ve run through the money that once fueled their lifestyle. Extreme measures may be necessary to acquire further funding.
+
+Free Skill
+Connect-0
+
+Quick Skills
+Connect-0
+Know-0
+Talk-0
+
+d6 Growth
+1 +1 Any Stat
+2 +1 Any Stat
+3 +1 Any Stat
+4 +1 Any Stat
+5 Connect
+6 Any Skill
+
+d8 Learning
+1 Any Skill
+2 Any Skill
+3 Connect
+4 Know
+5 Perform
+6 Pilot
+7 Talk
+8 Trade

@@ -1,6 +1,5 @@
 package com.swn.main.creator.pc.origin;
 
-import com.swn.main.generator.beast.BeastDisplayProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -11,10 +10,10 @@ import java.util.Scanner;
 @Component
 public class OriginCreator {
 
-    @Autowired OriginDisplayProperties beast;
+    @Autowired OriginDisplayProperties origin;
 
     public String createOrigin() {
-        return beast.displayProperties();
+        return origin.displayProperties();
     }
 
     public String originTooltip(String origin){

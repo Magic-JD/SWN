@@ -1,0 +1,28 @@
+Courtesan
+Your hero’s career was one of proffered pleasure. Simple prostitution is one form of this background, perhaps as an ordinary streetwalker, a part-time amateur with bills to pay, or an expensive companion to the wealthy, but other forms of satisfaction exist among the many worlds. Refined artists of conversation and grace command high fees in some societies, while others pay well for the simple company of certain men and women with the right bloodlines, special appearance, or auspicious personal qualities esteemed by their culture.
+
+Free Skill
+Perform-0
+
+Quick Skills
+Perform-0
+Notice-0
+Connect-0
+
+d6 Growth
+1 +1 Any Stat
+2 +2 Mental
+3 +2 Mental
+4 +2 Physical
+5 Connect
+6 Any Skill
+
+d8 Learning
+1 Any Combat
+2 Connect
+3 Exert
+4 Notice
+5 Perform
+6 Survive
+7 Talk
+8 Trade
