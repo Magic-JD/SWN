@@ -2,6 +2,7 @@ package com.swn.main.property.supplier;
 
 import com.swn.main.dice.Dice;
 import com.swn.main.property.Property;
+import com.swn.main.property.PropertyInfo;
 import com.swn.main.resourceextractor.ResourceExtractor;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,11 @@ public abstract class PropertySupplierImpl implements PropertySupplier {
     public String getPropertyString() {
         int roll = getRoll();
         return getName() + ": " + getString(roll);
+    }
+
+    @Override
+    public PropertyInfo getPropertyInfo(){
+        return new PropertyInfo(getName(), getString(getRoll()));
     }
 
     protected abstract String getFilePackage();

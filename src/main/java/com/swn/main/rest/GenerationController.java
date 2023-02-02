@@ -5,6 +5,7 @@ import com.swn.main.generator.encounter.EncounterCreator;
 import com.swn.main.generator.npc.NpcCreator;
 import com.swn.main.generator.problem.ProblemCreator;
 import com.swn.main.generator.world.WorldCreator;
+import com.swn.main.property.PropertyBlock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,43 +25,43 @@ public class GenerationController {
 
     @GetMapping("/world")
     @ResponseBody
-    public ResponseEntity<String> generateWorld() {
-        return ResponseEntity.ok(world.displayProperties());
+    public ResponseEntity<PropertyBlock> generateWorld() {
+        return ResponseEntity.ok(new PropertyBlock(world.displayPropertyInfo()));
     }
 
     @GetMapping("/npc/standard")
     @ResponseBody
-    public ResponseEntity<String> generateStandardNpc() {
-        return ResponseEntity.ok(npc.createStandard());
+    public ResponseEntity<PropertyBlock> generateStandardNpc() {
+        return ResponseEntity.ok(new PropertyBlock(npc.createStandard()));
     }
 
     @GetMapping("/npc/patron")
     @ResponseBody
-    public ResponseEntity<String> generatePatronNpc() {
-        return ResponseEntity.ok(npc.createPatron());
+    public ResponseEntity<PropertyBlock> generatePatronNpc() {
+        return ResponseEntity.ok(new PropertyBlock(npc.createPatron()));
     }
 
     @GetMapping("/encounter/wilderness")
     @ResponseBody
-    public ResponseEntity<String> generateEncounterWilderness() {
-        return ResponseEntity.ok(encounter.createWildernessEncounter());
+    public ResponseEntity<PropertyBlock> generateEncounterWilderness() {
+        return ResponseEntity.ok(new PropertyBlock(encounter.createWildernessEncounter()));
     }
 
     @GetMapping("/encounter/urban")
     @ResponseBody
-    public ResponseEntity<String> generateEncounterUrban() {
-        return ResponseEntity.ok(encounter.createUrbanEncounter());
+    public ResponseEntity<PropertyBlock> generateEncounterUrban() {
+        return ResponseEntity.ok(new PropertyBlock(encounter.createUrbanEncounter()));
     }
 
     @GetMapping("/beast")
     @ResponseBody
-    public ResponseEntity<String> generateBeast() {
-        return ResponseEntity.ok(beast.createBeast());
+    public ResponseEntity<PropertyBlock> generateBeast() {
+        return ResponseEntity.ok(new PropertyBlock(beast.createBeast()));
     }
 
     @GetMapping("/problem")
     @ResponseBody
-    public ResponseEntity<String> generateProblem() {
-        return ResponseEntity.ok(problem.displayProperties());
+    public ResponseEntity<PropertyBlock> generateProblem() {
+        return ResponseEntity.ok(new PropertyBlock(problem.displayPropertyInfo()));
     }
 }

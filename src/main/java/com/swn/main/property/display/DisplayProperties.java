@@ -1,5 +1,6 @@
 package com.swn.main.property.display;
 
+import com.swn.main.property.PropertyInfo;
 import com.swn.main.property.supplier.PropertySupplier;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -15,5 +16,12 @@ public abstract class DisplayProperties<T extends PropertySupplier> {
                 .stream()
                 .map(PropertySupplier::getPropertyString)
                 .collect(Collectors.joining("\n"));
+    }
+
+    public List<PropertyInfo> displayPropertyInfo() {
+        return properties
+                .stream()
+                .map(PropertySupplier::getPropertyInfo)
+                .collect(Collectors.toList());
     }
 }

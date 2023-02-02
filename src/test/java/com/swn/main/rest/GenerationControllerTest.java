@@ -9,6 +9,8 @@ import com.swn.main.generator.npc.standard.StandardNpcPropertySupplier;
 import com.swn.main.generator.npc.universal.UniversalNpcPropertySupplier;
 import com.swn.main.generator.problem.ProblemPropertySupplier;
 import com.swn.main.generator.world.WorldPropertySupplier;
+import com.swn.main.property.PropertyBlock;
+import com.swn.main.property.PropertyInfo;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -35,96 +37,110 @@ class GenerationControllerTest {
 
     @Test
     public void shouldGenerateWorldWithAllProperties(){
-        ResponseEntity<String> response = controller.generateWorld();
+        ResponseEntity<PropertyBlock> response = controller.generateWorld();
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
+        PropertyBlock block = response.getBody();
+        List<PropertyInfo> infos = block.properties();
         assertFalse(worldProperties.isEmpty());
         for(WorldPropertySupplier creator : worldProperties){
             String simpleName = creator.getClass().getSimpleName();
             System.out.println("Testing: " + simpleName);
-            assertTrue(response.getBody().contains(simpleName));
+            assertTrue(infos.stream().anyMatch(p -> p.name().equals(simpleName)));
         }
     }
 
     @Test
     public void shouldGenerateStandardNpcWithAllProperties(){
-        ResponseEntity<String> response = controller.generateStandardNpc();
+        ResponseEntity<PropertyBlock> response = controller.generateStandardNpc();
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
+        PropertyBlock block = response.getBody();
+        List<PropertyInfo> infos = block.properties();
         assertFalse(standardNpcProperties.isEmpty());
         List<NpcPropertySupplier> suppliers = Stream.concat(universalNpcProperties.stream(), standardNpcProperties.stream()).toList();
 
         for(NpcPropertySupplier creator : suppliers){
             String simpleName = creator.getClass().getSimpleName();
             System.out.println("Testing: " + simpleName);
-            assertTrue(response.getBody().contains(simpleName), "Does not contain property " + simpleName);
+            assertTrue(infos.stream().anyMatch(p -> p.name().equals(simpleName)));
         }
     }
 
     @Test
     public void shouldGeneratePatronNpcWithAllProperties(){
-        ResponseEntity<String> response = controller.generatePatronNpc();
+        ResponseEntity<PropertyBlock> response = controller.generatePatronNpc();
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
+        PropertyBlock block = response.getBody();
+        List<PropertyInfo> infos = block.properties();
         assertFalse(patronNpcProperties.isEmpty());
         List<NpcPropertySupplier> suppliers = Stream.concat(universalNpcProperties.stream(), Stream.concat(patronNpcProperties.stream(), standardNpcProperties.stream())).toList();
         for(NpcPropertySupplier creator : suppliers){
             String simpleName = creator.getClass().getSimpleName();
             System.out.println("Testing: " + simpleName);
-            assertTrue(response.getBody().contains(simpleName), "Does not contain property " + simpleName);
+            assertTrue(infos.stream().anyMatch(p -> p.name().equals(simpleName)));
         }
     }
 
     @Test
     public void shouldGenerateUrbanEncounterWithAllProperties(){
-        ResponseEntity<String> response = controller.generateEncounterUrban();
+        ResponseEntity<PropertyBlock> response = controller.generateEncounterUrban();
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
+        PropertyBlock block = response.getBody();
+        List<PropertyInfo> infos = block.properties();
         assertFalse(urbanEncounterProperties.isEmpty());
         for(UrbanEncounterPropertySupplier creator : urbanEncounterProperties){
             String simpleName = creator.getClass().getSimpleName();
             System.out.println("Testing: " + simpleName);
-            assertTrue(response.getBody().contains(simpleName), "Does not contain property " + simpleName);
+            assertTrue(infos.stream().anyMatch(p -> p.name().equals(simpleName)));
         }
     }
 
 
     @Test
     public void shouldGenerateWildernessEncounterWithAllProperties(){
-        ResponseEntity<String> response = controller.generateEncounterWilderness();
+        ResponseEntity<PropertyBlock> response = controller.generateEncounterWilderness();
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
+        PropertyBlock block = response.getBody();
+        List<PropertyInfo> infos = block.properties();
         assertFalse(wildernessEncounterProperties.isEmpty());
         for(WildernessEncounterPropertySupplier creator : wildernessEncounterProperties){
             String simpleName = creator.getClass().getSimpleName();
             System.out.println("Testing: " + simpleName);
-            assertTrue(response.getBody().contains(simpleName), "Does not contain property " + simpleName);
+            assertTrue(infos.stream().anyMatch(p -> p.name().equals(simpleName)));
         }
     }
 
     @Test
     public void shouldGenerateBeastWithAllProperties(){
-        ResponseEntity<String> response = controller.generateBeast();
+        ResponseEntity<PropertyBlock> response = controller.generateBeast();
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
+        PropertyBlock block = response.getBody();
+        List<PropertyInfo> infos = block.properties();
         assertFalse(beastProperties.isEmpty());
         for(BeastPropertySupplier creator : beastProperties){
             String simpleName = creator.getClass().getSimpleName();
             System.out.println("Testing: " + simpleName);
-            assertTrue(response.getBody().contains(simpleName), "Does not contain property " + simpleName);
+            assertTrue(infos.stream().anyMatch(p -> p.name().equals(simpleName)));
         }
     }
 
     @Test
     public void shouldGenerateProblemWithAllProperties(){
-        ResponseEntity<String> response = controller.generateProblem();
+        ResponseEntity<PropertyBlock> response = controller.generateProblem();
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
+        PropertyBlock block = response.getBody();
+        List<PropertyInfo> infos = block.properties();
         assertFalse(problemProperties.isEmpty());
         for(ProblemPropertySupplier creator : problemProperties){
             String simpleName = creator.getClass().getSimpleName();
             System.out.println("Testing: " + simpleName);
-            assertTrue(response.getBody().contains(simpleName), "Does not contain property " + simpleName);
+            assertTrue(infos.stream().anyMatch(p -> p.name().equals(simpleName)));
         }
     }
 }
