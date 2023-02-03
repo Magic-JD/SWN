@@ -9,7 +9,7 @@ Fix-0
 Pilot-0
 Program-0
 
-d6 Growth
+Growth
 1 +1 Any Stat
 2 +2 Physical
 3 +2 Physical
@@ -17,7 +17,7 @@ d6 Growth
 5 Exert
 6 Any Skill
 
-d8 Learning
+Learning
 1 Administer
 2 Connect
 3 Exert

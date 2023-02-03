@@ -9,7 +9,7 @@ Know-0
 Connect-0
 Administer-0
 
-d6 Growth
+Growth
 1 +1 Any Stat
 2 +2 Mental
 3 +2 Mental
@@ -17,7 +17,7 @@ d6 Growth
 5 Connect
 6 Any Skill
 
-d8 Learning
+Learning
 1 Administer
 2 Connect
 3 Fix
