@@ -1,6 +1,7 @@
 package com.swn.main.rest;
 
 import com.swn.main.creator.pc.origin.OriginCreator;
+import com.swn.main.creator.pc.origin.OriginDetailsCollection;
 import com.swn.main.creator.pc.statblock.StatBlockCreator;
 import com.swn.main.property.PropertyBlock;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,12 @@ public class CreatorController {
     @ResponseBody
     public ResponseEntity<PropertyBlock> generatePcOrigin() {
         return ResponseEntity.ok(new PropertyBlock(origin.createOrigin()));
+    }
+
+    @GetMapping("/pc/origin/all")
+    @ResponseBody
+    public ResponseEntity<OriginDetailsCollection> allOriginDetails() {
+        return ResponseEntity.ok(new OriginDetailsCollection(origin.getAllOriginDetails()));
     }
 
     @GetMapping("/pc/origin/{origin}")

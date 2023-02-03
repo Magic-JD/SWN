@@ -16,4 +16,11 @@ public class OriginDisplayProperties extends DisplayProperties<OriginPropertySup
                 .flatMap(ps -> ps.getPropertyBasedOnString(s).stream())
                 .collect(Collectors.toList());
     }
+
+    public List<PropertyInfo> findAllPropertyInfo() {
+        return properties
+                .stream()
+                .flatMap(ps -> ps.getAllProperties().stream())
+                .collect(Collectors.toList());
+    }
 }

@@ -23,6 +23,14 @@ public class OriginCreator {
         return origin.findPropertyInfo(s).stream().flatMap(this::updateOriginWithTooltipInformation).collect(Collectors.toList());
     }
 
+    public List<OriginDetails> getAllOriginDetails(){
+        return origin
+                .findAllPropertyInfo()
+                .stream()
+                .map(p -> new OriginDetails(p.name(), originTooltip(p.name().toLowerCase())))
+                .collect(Collectors.toList());
+    }
+
     public String originTooltip(String origin){
         return tooltip.getTooltip(origin);
     }
