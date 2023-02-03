@@ -32,7 +32,7 @@ public class OriginCreator {
         String originTooltip = originTooltip(name);
         return Stream.concat(Stream.of(propertyInfo), Arrays.stream(originTooltip.split("\r?\n\r?\n")).skip(1).map(s -> {
             String[] nameDescription = s.split("\n", 2);
-            return new PropertyInfo(nameDescription[0], "\n" + nameDescription[1]);
+            return new PropertyInfo("\n" + nameDescription[0], "\n" + nameDescription[1]);
         }));
     }
 
