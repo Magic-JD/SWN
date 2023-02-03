@@ -24,7 +24,7 @@ public class PropertySupplierPropertyImpl extends PropertySupplierImpl implement
 
     @PostConstruct
     public void initProperties() {
-        properties = resourceExtractor.resourceMapping(propertyLink);
+        properties = resourceExtractor.resourceMappingFromFile(propertyLink);
     }
 
     @Override

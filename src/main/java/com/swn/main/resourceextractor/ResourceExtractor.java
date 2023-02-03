@@ -1,6 +1,5 @@
 package com.swn.main.resourceextractor;
 
-import com.swn.main.dice.Dice;
 import com.swn.main.property.*;
 import org.springframework.stereotype.Component;
 
@@ -10,8 +9,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 @Component
@@ -30,27 +27,40 @@ public class ResourceExtractor {
         return stringBuilder.toString();
     }
 
-    public List<Property> resourceMapping(String resourceName) {
+    public List<Property> resourceMappingFromString(String string){
+        List<Property> properties = new ArrayList<>();
+        int count = 1;
+        for (String s : string.split(System.lineSeparator())){
+            addLineToProperties(properties, count, null, s);
+            count++;
+        }
+        return properties;
+    }
+
+    public List<Property> resourceMappingFromFile(String resourceName) {
         List<Property> properties = new ArrayList<>();
         int count = 1;
         try (Scanner scanner = new Scanner(new File(resourceName))) {
             while (scanner.hasNext()) {
-                String line = scanner.nextLine();
-                if (line.startsWith("PSP")) {
-                    properties.add(psp(count, line, resourceName));
-                } else if (line.startsWith("DPP")) {
-                    properties.add(dpp(count, line, resourceName));
-                } else if (line.contains("|")) {
-                    properties.add(ranged(line));
-                } else {
-                    properties.add(fromString(count, line));
-                }
+                addLineToProperties(properties, count, resourceName, scanner.nextLine());
                 count++;
             }
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
         return properties;
+    }
+
+    private void addLineToProperties(List<Property> properties, int count, String resourceName, String line){
+        if (line.startsWith("PSP")) {
+            properties.add(psp(count, line, resourceName));
+        } else if (line.startsWith("DPP")) {
+            properties.add(dpp(count, line, resourceName));
+        } else if (line.contains("|")) {
+            properties.add(ranged(line));
+        } else {
+            properties.add(fromString(count, line));
+        }
     }
 
     private Property dpp(int count, String line, String resourceName) {

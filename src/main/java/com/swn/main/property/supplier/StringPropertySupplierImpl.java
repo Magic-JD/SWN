@@ -11,15 +11,22 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public abstract class PropertySupplierImpl implements PropertySupplier {
+public abstract class StringPropertySupplierImpl implements PropertySupplier {
 
     @Autowired protected ResourceExtractor resourceExtractor;
     protected List<Property> properties;
 
+    public StringPropertySupplierImpl(ResourceExtractor resourceExtractor){
+        this.resourceExtractor = resourceExtractor;
+        initProperties();
+    }
+
     @PostConstruct
     public void initProperties() {
-        properties = resourceExtractor.resourceMappingFromFile(getFile());
+        properties = resourceExtractor.resourceMappingFromString(getStringToBeMapped());
     }
+
+    public abstract String getStringToBeMapped();
 
     @Override
     public String getPropertyString() {
@@ -32,9 +39,13 @@ public abstract class PropertySupplierImpl implements PropertySupplier {
         return new PropertyInfo(getName(), getString(getRoll()));
     }
 
-    protected abstract String getFilePackage();
+    protected String getFilePackage(){
+        return null;
+    }
 
-    protected abstract int getDiceNumber();
+    protected int getDiceNumber(){
+        return 1;
+    }
 
     protected int getRoll() {
         return Dice.rollXDN(getDiceNumber(), properties.stream()
@@ -65,11 +76,9 @@ public abstract class PropertySupplierImpl implements PropertySupplier {
                 .collect(Collectors.joining(" - "));
     }
 
-    protected String getName() {
-        return getClass().getSimpleName();
-    }
+    protected abstract String getName();
 
     protected String getFile() {
-        return getFilePackage() + "/" + getName().toLowerCase() + ".txt";
+        return null;
     }
 }

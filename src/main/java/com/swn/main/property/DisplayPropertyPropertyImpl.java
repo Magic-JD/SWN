@@ -37,7 +37,7 @@ public class DisplayPropertyPropertyImpl extends DisplayProperties<PropertySuppl
 
             @PostConstruct
             public void initProperties() {
-                properties = re.resourceMapping(s);
+                properties = re.resourceMappingFromFile(s);
             }
         }).collect(Collectors.toList());
         this.properties.forEach(PropertySupplierImpl::initProperties);
