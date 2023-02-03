@@ -10,19 +10,19 @@ Notice-0
 Any Combat-0
 
 Growth
-1 +1 Any Stat
-2 +2 Physical
-3 +2 Physical
-4 +2 Mental
-5 Exert
-6 Any Skill
++1 Any Stat
++2 Physical
++2 Physical
++2 Mental
+Exert
+Any Skill
 
 Learning
-1 Any Combat
-2 Connect
-3 Exert
-4 Lead
-5 Notice
-6 Punch
-7 Sneak
-8 Survive
+Any Combat
+Connect
+Exert
+Lead
+Notice
+Punch
+Sneak
+Survive

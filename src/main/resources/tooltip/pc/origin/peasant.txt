@@ -10,19 +10,19 @@ Sneak-0
 Survive-0
 
 Growth
-1 +1 Any Stat
-2 +2 Physical
-3 +2 Physical
-4 +2 Physical
-5 Exert
-6 Any Skill
++1 Any Stat
++2 Physical
++2 Physical
++2 Physical
+Exert
+Any Skill
 
 Learning
-1 Connect
-2 Exert
-3 Fix
-4 Notice
-5 Sneak
-6 Survive
-7 Trade
-8 Work
+Connect
+Exert
+Fix
+Notice
+Sneak
+Survive
+Trade
+Work

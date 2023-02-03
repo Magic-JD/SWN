@@ -10,19 +10,19 @@ Exert-0
 Work-0
 
 Growth
-1 +1 Any Stat
-2 +1 Any Stat
-3 +1 Any Stat
-4 +1 Any Stat
-5 Exert
-6 Any Skill
++1 Any Stat
++1 Any Stat
++1 Any Stat
++1 Any Stat
+Exert
+Any Skill
 
 Learning
-1 Administer
-2 Any Skill
-3 Connect
-4 Exert
-5 Fix
-6 Pilot
-7 Program
-8 Work
+Administer
+Any Skill
+Connect
+Exert
+Fix
+Pilot
+Program
+Work

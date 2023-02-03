@@ -10,19 +10,19 @@ Connect-0
 Administer-0
 
 Growth
-1 +1 Any Stat
-2 +2 Mental
-3 +2 Mental
-4 +2 Mental
-5 Connect
-6 Any Skill
++1 Any Stat
++2 Mental
++2 Mental
++2 Mental
+Connect
+Any Skill
 
 Learning
-1 Administer
-2 Connect
-3 Fix
-4 Know
-5 Notice
-6 Perform
-7 Program
-8 Talk
+Administer
+Connect
+Fix
+Know
+Notice
+Perform
+Program
+Talk

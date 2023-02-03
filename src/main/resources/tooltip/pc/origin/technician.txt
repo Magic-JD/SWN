@@ -10,19 +10,19 @@ Exert-0
 Notice-0
 
 Growth
-1 +1 Any Stat
-2 +2 Physical
-3 +2 Mental
-4 +2 Mental
-5 Connect
-6 Any Skill
++1 Any Stat
++2 Physical
++2 Mental
++2 Mental
+Connect
+Any Skill
 
 Learning
-1 Administer
-2 Connect
-3 Exert
-4 Fix
-5 Fix
-6 Know
-7 Notice
-8 Pilot
+Administer
+Connect
+Exert
+Fix
+Fix
+Know
+Notice
+Pilot

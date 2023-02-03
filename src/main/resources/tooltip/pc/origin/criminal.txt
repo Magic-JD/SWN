@@ -10,19 +10,19 @@ Connect-0
 Talk-0
 
 Growth
-1 +1 Any Stat
-2 +2 Mental
-3 +2 Physical
-4 +2 Mental
-5 Connect
-6 Any Skill
++1 Any Stat
++2 Mental
++2 Physical
++2 Mental
+Connect
+Any Skill
 
 Learning
-1 Administer
-2 Any Combat
-3 Connect
-4 Notice
-5 Program
-6 Sneak
-7 Talk
-8 Trade
+Administer
+Any Combat
+Connect
+Notice
+Program
+Sneak
+Talk
+Trade

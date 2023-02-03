@@ -10,19 +10,19 @@ Pilot-0
 Program-0
 
 Growth
-1 +1 Any Stat
-2 +2 Physical
-3 +2 Physical
-4 +2 Mental
-5 Exert
-6 Any Skill
++1 Any Stat
++2 Physical
++2 Physical
++2 Mental
+Exert
+Any Skill
 
 Learning
-1 Administer
-2 Connect
-3 Exert
-4 Fix
-5 Know
-6 Pilot
-7 Program
-8 Talk
+Administer
+Connect
+Exert
+Fix
+Know
+Pilot
+Program
+Talk

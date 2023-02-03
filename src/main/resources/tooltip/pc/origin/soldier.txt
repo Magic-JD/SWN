@@ -10,19 +10,19 @@ Exert-0
 Survive-0
 
 Growth
-1 +1 Any Stat
-2 +2 Physical
-3 +2 Physical
-4 +2 Physical
-5 Exert
-6 Any Skill
++1 Any Stat
++2 Physical
++2 Physical
++2 Physical
+Exert
+Any Skill
 
 Learning
-1 Administer
-2 Any Combat
-3 Exert
-4 Fix
-5 Lead
-6 Notice
-7 Sneak
-8 Survive
+Administer
+Any Combat
+Exert
+Fix
+Lead
+Notice
+Sneak
+Survive

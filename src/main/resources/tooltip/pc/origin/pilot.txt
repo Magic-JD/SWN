@@ -10,19 +10,19 @@ Fix-0
 Shoot or Trade-0
 
 Growth
-1 +1 Any Stat
-2 +2 Physical
-3 +2 Physical
-4 +2 Mental
-5 Connect
-6 Any Skill
++1 Any Stat
++2 Physical
++2 Physical
++2 Mental
+Connect
+Any Skill
 
 Learning
-1 Connect
-2 Exert
-3 Fix
-4 Notice
-5 Pilot
-6 Pilot
-7 Shoot
-8 Trade
+Connect
+Exert
+Fix
+Notice
+Pilot
+Pilot
+Shoot
+Trade

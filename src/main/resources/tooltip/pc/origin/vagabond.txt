@@ -10,19 +10,19 @@ Sneak-0
 Notice-0
 
 Growth
-1 +1 Any Stat
-2 +2 Physical
-3 +2 Physical
-4 +2 Mental
-5 Exert
-6 Any Skill
++1 Any Stat
++2 Physical
++2 Physical
++2 Mental
+Exert
+Any Skill
 
 Learning
-1 Any Combat
-2 Connect
-3 Notice
-4 Perform
-5 Pilot
-6 Sneak
-7 Survive
-8 Work
+Any Combat
+Connect
+Notice
+Perform
+Pilot
+Sneak
+Survive
+Work
