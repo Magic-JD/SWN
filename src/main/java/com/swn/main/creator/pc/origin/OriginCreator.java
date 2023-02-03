@@ -30,9 +30,9 @@ public class OriginCreator {
     private Stream<PropertyInfo> updateOriginWithTooltipInformation(PropertyInfo propertyInfo){
         String name = propertyInfo.details().split(",")[0].toLowerCase();
         String originTooltip = originTooltip(name);
-        return Stream.concat(Stream.of(propertyInfo), Arrays.stream(originTooltip.split("\r?\n\r?\n")).map(s -> {
+        return Stream.concat(Stream.of(propertyInfo), Arrays.stream(originTooltip.split("\r?\n\r?\n")).skip(1).map(s -> {
             String[] nameDescription = s.split("\n", 2);
-            return new PropertyInfo(nameDescription[0], nameDescription[1]);
+            return new PropertyInfo(nameDescription[0], "\n" + nameDescription[1]);
         }));
     }
 
