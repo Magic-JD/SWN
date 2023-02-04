@@ -58,7 +58,7 @@ public class PropertySupplierPropertyImpl extends PropertySupplierImpl implement
     }
 
     @Override
-    protected String getName() {
+    public String getName() {
         String[] split = propertyLink.split("/");
         String name = split[split.length-1];
         return StringUtils.capitalize(name.split("\\.")[0]);

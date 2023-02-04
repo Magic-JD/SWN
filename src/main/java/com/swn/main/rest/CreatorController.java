@@ -2,6 +2,7 @@ package com.swn.main.rest;
 
 import com.swn.main.creator.pc.origin.OriginCreator;
 import com.swn.main.creator.pc.origin.OriginDetailsCollection;
+import com.swn.main.creator.pc.statblock.PropertyNameBlock;
 import com.swn.main.creator.pc.statblock.StatBlockCreator;
 import com.swn.main.property.PropertyBlock;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,12 @@ public class CreatorController {
     @ResponseBody
     public ResponseEntity<PropertyBlock> generatePcStatBlock() {
         return ResponseEntity.ok(new PropertyBlock(statBlock.displayPropertyInfo()));
+    }
+
+    @GetMapping("/pc/stat-block/names")
+    @ResponseBody
+    public ResponseEntity<PropertyNameBlock> getAllStats() {
+        return ResponseEntity.ok(new PropertyNameBlock(statBlock.getAllPropertyNames()));
     }
 
     @GetMapping("/pc/origin")

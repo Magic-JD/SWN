@@ -65,7 +65,7 @@ public abstract class PropertySupplierImpl implements PropertySupplier {
                 .collect(Collectors.joining(" - "));
     }
 
-    protected String getName() {
+    public String getName() {
         return getClass().getSimpleName();
     }
 
