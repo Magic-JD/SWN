@@ -17,9 +17,12 @@ public class SkillCreator {
         String pending = skills.pending();
         if(pending != null && !pending.isEmpty()){
             if(pending.contains(" or ")){
-                followUp = new ArrayList<>(Arrays.stream(pending.split(" or ")).filter(s -> !skills.chosen().contains(s)).toList());
-                //pending = null;
-            } else if(skills.chosen().contains(pending)){
+                followUp = Arrays.stream(pending.split(" or ")).filter(s -> skills.chosen().stream().filter(c -> c.equals(s)).count() < 2).toList();
+            }
+            if(pending.equals("Any Combat")){
+                followUp = List.of("Shoot", "Stab", "Punch");
+            }
+            if(skills.chosen().contains(pending)){
                 available.remove(pending);
             }
         }
