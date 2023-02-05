@@ -5,4 +5,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Constitution extends StatBlockPropertySupplier {
+    @Override
+    public int getPriority() {
+        return 3;
+    }
 }

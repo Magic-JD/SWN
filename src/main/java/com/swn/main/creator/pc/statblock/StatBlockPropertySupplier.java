@@ -1,5 +1,6 @@
 package com.swn.main.creator.pc.statblock;
 
+import com.swn.main.creator.pc.statblock.properties.StatPropertyInfo;
 import com.swn.main.dice.Dice;
 import com.swn.main.property.PropertyInfo;
 import com.swn.main.property.supplier.PropertySupplierImpl;
@@ -39,4 +40,14 @@ public abstract class StatBlockPropertySupplier extends PropertySupplierImpl {
     protected int getDiceNumber() {
         return 3;
     }
+
+    public StatPropertyInfo getStatBlockInfo(){
+        String name = getName();
+        int value = getRoll();
+        String mod = getString(value);
+        int priority = getPriority();
+        return new StatPropertyInfo(name, value, mod, priority);
+    }
+
+    abstract public int getPriority();
 }

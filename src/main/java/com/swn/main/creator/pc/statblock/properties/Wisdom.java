@@ -5,4 +5,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Wisdom extends StatBlockPropertySupplier {
+    @Override
+    public int getPriority() {
+        return 5;
+    }
 }
