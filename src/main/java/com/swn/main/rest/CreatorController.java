@@ -2,6 +2,9 @@ package com.swn.main.rest;
 
 import com.swn.main.creator.pc.origin.OriginCreator;
 import com.swn.main.creator.pc.origin.OriginDetailsCollection;
+import com.swn.main.creator.pc.skill.FurtherChoices;
+import com.swn.main.creator.pc.skill.SkillCreator;
+import com.swn.main.creator.pc.skill.SkillSet;
 import com.swn.main.creator.pc.statblock.PropertyNameBlock;
 import com.swn.main.creator.pc.statblock.StatBlockCreator;
 import com.swn.main.creator.pc.statblock.properties.StatPropertyBlock;
@@ -16,6 +19,7 @@ public class CreatorController {
 
     @Autowired StatBlockCreator statBlock;
     @Autowired OriginCreator origin;
+    @Autowired SkillCreator skill;
 
     @GetMapping("/pc/stat-block")
     @ResponseBody
@@ -51,6 +55,12 @@ public class CreatorController {
     @ResponseBody
     public ResponseEntity<String> generateOriginTooltip(@PathVariable String origin) {
         return ResponseEntity.ok(this.origin.originTooltip(origin));
+    }
+
+    @PostMapping("/pc/skills/update")
+    @ResponseBody
+    public ResponseEntity<FurtherChoices> updateSkills(@RequestBody SkillSet skillSet){
+        return ResponseEntity.ok(skill.findFurtherChoices(skillSet));
     }
 
 }
