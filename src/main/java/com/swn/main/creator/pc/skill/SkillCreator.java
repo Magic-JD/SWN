@@ -2,9 +2,7 @@ package com.swn.main.creator.pc.skill;
 
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -13,9 +11,9 @@ import java.util.stream.Stream;
 public class SkillCreator {
 
     public FurtherChoices findFurtherChoices(SkillSet skills){
-        List<String> available = skills.available();
+        Set<String> available = skills.available();
         List<String> followUp = new ArrayList<>();
-        available.remove("All Skills");
+        available.remove("Any Skill");
         String pending = skills.pending();
         if(pending != null && !pending.isEmpty()){
             if(pending.contains(" or ")){
@@ -35,7 +33,7 @@ public class SkillCreator {
         return s -> skills.chosen().stream().filter(c -> c.equals(s)).count() < 2;
     }
 
-    private List<FurtherChoice> convertToFurtherChoice(List<String> list) {
-        return list.stream().map(s -> new FurtherChoice(s, null)).collect(Collectors.toList());
+    private List<FurtherChoice> convertToFurtherChoice(Collection<String> coll) {
+        return coll.stream().map(s -> new FurtherChoice(s, null)).collect(Collectors.toList());
     }
 }
