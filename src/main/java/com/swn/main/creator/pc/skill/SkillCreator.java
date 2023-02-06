@@ -65,6 +65,6 @@ public class SkillCreator {
     }
 
     private List<FurtherChoice> convertToFurtherChoice(Collection<String> coll) {
-        return coll.stream().map(s -> new FurtherChoice(s, skillDisplayProperties.findPropertyInfo(s).stream().map(PropertyInfo::details).findFirst().orElseThrow())).collect(Collectors.toList());
+        return coll.stream().map(s -> new FurtherChoice(s, skillDisplayProperties.findPropertyInfo(s).stream().map(PropertyInfo::details).findFirst().orElse(null))).collect(Collectors.toList());
     }
 }
