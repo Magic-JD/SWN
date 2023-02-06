@@ -26,6 +26,10 @@ public class SkillCreator {
         if(pending.equals("Any Skill")){
             followUp = skillDisplayProperties.findAllPropertyInfo().stream().map(PropertyInfo::name).filter(ensureNoDuplicates(skills)).toList();
         }
+        int count = Collections.frequency(skills.chosen(), pending);
+        if(count == 2 && !pending.startsWith("+")) {
+            followUp = skillDisplayProperties.findAllPropertyInfo().stream().map(PropertyInfo::name).filter(ensureNoDuplicates(skills)).toList();
+        }
         if(followUp.size() == 1){
             pending = followUp.get(0);
             followUp = new ArrayList<>();
@@ -61,6 +65,6 @@ public class SkillCreator {
     }
 
     private List<FurtherChoice> convertToFurtherChoice(Collection<String> coll) {
-        return coll.stream().map(s -> new FurtherChoice(s, null)).collect(Collectors.toList());
+        return coll.stream().map(s -> new FurtherChoice(s, skillDisplayProperties.findPropertyInfo(s).stream().map(PropertyInfo::details).findFirst().orElseThrow())).collect(Collectors.toList());
     }
 }
