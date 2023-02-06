@@ -3,15 +3,20 @@ package com.swn.main.rest;
 import com.swn.main.creator.pc.origin.OriginCreator;
 import com.swn.main.creator.pc.origin.OriginDetailsCollection;
 import com.swn.main.creator.pc.skill.FurtherChoices;
+import com.swn.main.creator.pc.skill.RollSkills;
 import com.swn.main.creator.pc.skill.SkillCreator;
 import com.swn.main.creator.pc.skill.SkillSet;
 import com.swn.main.creator.pc.statblock.PropertyNameBlock;
 import com.swn.main.creator.pc.statblock.StatBlockCreator;
 import com.swn.main.creator.pc.statblock.properties.StatPropertyBlock;
 import com.swn.main.property.PropertyBlock;
+import com.swn.main.property.PropertyInfo;
+import com.swn.main.table.Table;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.HashSet;
 
 @RestController
 @RequestMapping("/create")
@@ -20,6 +25,7 @@ public class CreatorController {
     @Autowired StatBlockCreator statBlock;
     @Autowired OriginCreator origin;
     @Autowired SkillCreator skill;
+    @Autowired RollController roll;
 
     @GetMapping("/pc/stat-block")
     @ResponseBody
@@ -63,4 +69,11 @@ public class CreatorController {
         return ResponseEntity.ok(skill.findFurtherChoices(skillSet));
     }
 
+    @PostMapping("/pc/skills/generate")
+    @ResponseBody
+    public ResponseEntity<FurtherChoices> generateSkills(@RequestBody RollSkills rollSkills){
+        PropertyInfo body = roll.rollTable(new Table(rollSkills.name(), rollSkills.table())).getBody();
+        assert body != null;
+        return ResponseEntity.ok(skill.findRollFurtherChoices(new SkillSet(rollSkills.chosen(), body.details(), new HashSet<>())));
+    }
 }
