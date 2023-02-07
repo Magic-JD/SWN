@@ -44,7 +44,8 @@ public abstract class StatBlockPropertySupplier extends PropertySupplierImpl {
     public StatPropertyInfo getStatBlockInfo(){
         String name = getName();
         int value = getRoll();
-        String mod = getString(value);
+        String modString = getString(value);
+        int mod = Integer.parseInt(modString.substring(1, modString.length()-1));
         int priority = getPriority();
         return new StatPropertyInfo(name, value, mod, priority);
     }
