@@ -21,6 +21,6 @@ public class FociCreator {
 
     private FociDetails stringToFociDetails(String s) {
         String[] split = s.split("\n");
-        return new FociDetails(split[0], split[1], split[2], split[3], split[4]);
+        return new FociDetails(split[0], split[1], split[2], split[3], split[4], split[5]);
     }
 }
