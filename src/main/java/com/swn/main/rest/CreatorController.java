@@ -1,5 +1,7 @@
 package com.swn.main.rest;
 
+import com.swn.main.creator.pc.foci.FociBlock;
+import com.swn.main.creator.pc.foci.FociCreator;
 import com.swn.main.creator.pc.origin.OriginCreator;
 import com.swn.main.creator.pc.origin.OriginDetailsCollection;
 import com.swn.main.creator.pc.skill.FurtherChoices;
@@ -26,6 +28,7 @@ public class CreatorController {
     @Autowired OriginCreator origin;
     @Autowired SkillCreator skill;
     @Autowired RollController roll;
+    @Autowired FociCreator foci;
 
     @GetMapping("/pc/stat-block")
     @ResponseBody
@@ -75,5 +78,11 @@ public class CreatorController {
         PropertyInfo body = roll.rollTable(new Table(rollSkills.name(), rollSkills.table())).getBody();
         assert body != null;
         return ResponseEntity.ok(skill.findRollFurtherChoices(new SkillSet(rollSkills.chosen(), body.details(), new HashSet<>())));
+    }
+
+    @GetMapping("/pc/foci/all")
+    @ResponseBody
+    public ResponseEntity<FociBlock> allFoci() {
+        return ResponseEntity.ok(foci.getAllFoci());
     }
 }
