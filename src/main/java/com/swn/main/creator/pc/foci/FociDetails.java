@@ -1,4 +1,6 @@
 package com.swn.main.creator.pc.foci;
 
-public record FociDetails(String name, String restriction, String skill, String description, String level1, String level2) {
+import java.util.List;
+
+public record FociDetails(String name, String restriction, List<String> skill, String description, String level1, String level2) {
 }
