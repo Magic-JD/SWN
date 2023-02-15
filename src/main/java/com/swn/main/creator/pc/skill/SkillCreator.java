@@ -52,6 +52,10 @@ public class SkillCreator {
             if(skills.chosen().contains(pending) && !pending.startsWith("+")){
                 available.remove(pending);
             }
+            int count = Collections.frequency(skills.chosen(), pending);
+            if((count == 2 && !pending.startsWith("+") || pending.equals("Special"))) {
+                followUp = skillDisplayProperties.findAllPropertyInfo().stream().map(PropertyInfo::name).filter(ensureNoDuplicates(skills)).toList();
+            }
         }
         if(followUp.size() == 1){
             pending = followUp.get(0);
