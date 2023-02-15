@@ -26,13 +26,7 @@ public class FociCreator {
         String skill = split[2];
         List<String> skills = Collections.emptyList();
         if(!skill.equals("None")){
-            if(skill.equals("Any Combat")) {
-                skills = List.of("Punch", "Shoot", "Stab");
-            } else if(skill.contains(" or ")){
-                skills = Arrays.stream(skill.split(" or ")).collect(Collectors.toList());
-            } else {
-                skills = List.of(skill);
-            }
+            skills = List.of(skill);
         }
         return new FociDetails(split[0], split[1], skills, split[3], split[4], split[5]);
     }
