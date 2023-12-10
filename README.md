@@ -25,3 +25,5 @@ This contains a link to a number of further files. These files are then loaded a
 For most cases, the base properties are sufficient.
 
 To add a new generation item, you have to create a new package in the generator with the name of the item you want to generate [X]. Then add a XCreator class which should contain a XDisplayProperties genericised with an XPropertySupplier. The XPropertySupplier should contain the path to the desired file. Then for every property you want to add to that generate then you will have to add a subclass of the XPropertySupplier and create a file with the same name in the folder specified in the XPropertySupplier. This should have a list of the desired properties.
+
+Code is deployed automatically to a vercel instance.
