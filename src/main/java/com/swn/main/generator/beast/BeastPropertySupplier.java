@@ -8,7 +8,7 @@ public abstract class BeastPropertySupplier extends PropertySupplierImpl {
 
     @Override
     protected String getFilePackage() {
-        return "./src/main/resources/random_gen/beast";
+        return "/random_gen/beast";
     }
 
     @Override

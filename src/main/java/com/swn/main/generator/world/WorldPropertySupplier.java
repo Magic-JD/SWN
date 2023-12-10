@@ -8,7 +8,7 @@ public abstract class WorldPropertySupplier extends PropertySupplierImpl {
 
     @Override
     protected String getFilePackage() {
-        return "./src/main/resources/random_gen/world";
+        return "/random_gen/world";
     }
 
     @Override

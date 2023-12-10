@@ -3,12 +3,10 @@ package com.swn.main.resourceextractor;
 import com.swn.main.property.*;
 import org.springframework.stereotype.Component;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
 import java.util.stream.Collectors;
 
 @Component
@@ -16,13 +14,13 @@ public class ResourceExtractor {
 
     public String fullResource(String resourceName){
         StringBuilder stringBuilder = new StringBuilder();
-        try (Scanner scanner = new Scanner(new File(resourceName))) {
-            while (scanner.hasNext()) {
-                stringBuilder.append(scanner.nextLine());
+        try (InputStream in = getClass().getResourceAsStream(resourceName); BufferedReader reader = new BufferedReader(new InputStreamReader(in))) {
+            reader.lines().forEach(s -> {
+                stringBuilder.append(s);
                 stringBuilder.append("\n");
-            }
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            });
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
         }
         return stringBuilder.toString();
     }
@@ -39,13 +37,13 @@ public class ResourceExtractor {
 
     public List<Property> resourceMappingFromFile(String resourceName) {
         List<Property> properties = new ArrayList<>();
-        int count = 1;
-        try (Scanner scanner = new Scanner(new File(resourceName))) {
-            while (scanner.hasNext()) {
-                addLineToProperties(properties, count, resourceName, scanner.nextLine());
-                count++;
+        try (InputStream in = getClass().getResourceAsStream(resourceName); BufferedReader reader = new BufferedReader(new InputStreamReader(in))) {
+            var lines = reader.lines().toArray(String[]::new);
+            for (int i = 0; i < lines.length; i++) {
+                addLineToProperties(properties, i+1, resourceName, lines[i]);
+
             }
-        } catch (FileNotFoundException e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
         return properties;

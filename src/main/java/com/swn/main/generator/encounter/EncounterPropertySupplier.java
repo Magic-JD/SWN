@@ -8,7 +8,7 @@ public abstract class EncounterPropertySupplier extends PropertySupplierImpl {
 
     @Override
     protected String getFilePackage() {
-        return "./src/main/resources/random_gen/encounter";
+        return "/random_gen/encounter";
     }
 
     @Override

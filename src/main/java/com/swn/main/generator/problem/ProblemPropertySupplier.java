@@ -8,7 +8,7 @@ public abstract class ProblemPropertySupplier extends PropertySupplierImpl {
 
     @Override
     protected String getFilePackage() {
-        return "./src/main/resources/random_gen/problem";
+        return "/random_gen/problem";
     }
 
     @Override

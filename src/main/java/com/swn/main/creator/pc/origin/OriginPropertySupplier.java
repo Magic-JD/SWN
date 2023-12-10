@@ -14,7 +14,7 @@ public abstract class OriginPropertySupplier extends PropertySupplierImpl {
 
     @Override
     protected String getFilePackage() {
-        return "./src/main/resources/creator/pc/origin";
+        return "/creator/pc/origin";
     }
 
     @Override

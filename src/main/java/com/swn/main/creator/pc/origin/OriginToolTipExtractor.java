@@ -8,6 +8,6 @@ public class OriginToolTipExtractor extends ToolTipExtractor {
 
     @Override
     protected String filePath() {
-        return "./src/main/resources/tooltip/pc/origin/";
+        return "/tooltip/pc/origin/";
     }
 }
