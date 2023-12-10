@@ -14,7 +14,7 @@ public abstract class SkillPropertySupplier extends PropertySupplierImpl {
 
     @Override
     protected String getFilePackage() {
-        return "src/main/resources/creator/pc/skills";
+        return "./src/main/resources/creator/pc/skills";
     }
 
     @Override

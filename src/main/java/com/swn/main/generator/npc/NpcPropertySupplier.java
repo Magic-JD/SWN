@@ -8,7 +8,7 @@ public abstract class NpcPropertySupplier extends PropertySupplierImpl {
 
     @Override
     protected String getFilePackage() {
-        return "src/main/resources/random_gen/npc";
+        return "./src/main/resources/random_gen/npc";
     }
 
     @Override

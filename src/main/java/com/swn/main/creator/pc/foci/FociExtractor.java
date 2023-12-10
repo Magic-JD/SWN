@@ -8,6 +8,6 @@ public class FociExtractor extends ToolTipExtractor {
 
     @Override
     protected String filePath() {
-        return "src/main/resources/creator/pc/foci/";
+        return "./src/main/resources/creator/pc/foci/";
     }
 }
